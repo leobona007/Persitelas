@@ -1,9 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Testimonial } from '@shared/schema';
 
-const renderStars = (rating: number) => {
+const renderStars = (rating: number | null) => {
+  const ratingValue = rating || 0;
   return Array.from({ length: 5 }, (_, i) => (
-    <i key={i} className={`fas fa-star ${i < rating ? '' : 'text-white/30'}`}></i>
+    <i key={i} className={`fas fa-star ${i < ratingValue ? '' : 'text-white/30'}`}></i>
   ));
 };
 
@@ -16,7 +17,7 @@ const TestimonialsSection = () => {
     return (
       <section className="py-16 bg-[#225260] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">O Que Nossos Clientes Dizem</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="bg-white/10 p-6 rounded-lg animate-pulse">
@@ -45,8 +46,8 @@ const TestimonialsSection = () => {
     return (
       <section className="py-16 bg-[#225260] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6">What Our Clients Say</h2>
-          <p className="text-white/80">Error loading testimonials. Please try again later.</p>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6">O Que Nossos Clientes Dizem</h2>
+          <p className="text-white/80">Erro ao carregar depoimentos. Por favor, tente novamente mais tarde.</p>
         </div>
       </section>
     );
@@ -55,7 +56,7 @@ const TestimonialsSection = () => {
   return (
     <section className="py-16 bg-[#225260] text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">What Our Clients Say</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">O Que Nossos Clientes Dizem</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials?.map((testimonial) => (

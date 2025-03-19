@@ -67,7 +67,7 @@ const NewsletterSection = () => {
           </form>
           
           <p className="text-sm mt-4 text-white/80">
-            By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+            Ao se inscrever, você concorda com nossa Política de Privacidade e consente em receber atualizações da nossa empresa.
           </p>
         </div>
       </div>

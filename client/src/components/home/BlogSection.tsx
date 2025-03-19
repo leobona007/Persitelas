@@ -19,9 +19,9 @@ const BlogSection = () => {
       <section className="py-16 bg-[#F8F8F8]">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#225260]">Latest News</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#225260]">Últimas Notícias</h2>
             <Link href="/blog">
-              <a className="text-[#5B412A] hover:text-[#5B412A]/80 font-medium">View All Articles →</a>
+              <a className="text-[#5B412A] hover:text-[#5B412A]/80 font-medium">Ver Todos os Artigos →</a>
             </Link>
           </div>
           
@@ -48,8 +48,8 @@ const BlogSection = () => {
     return (
       <section className="py-16 bg-[#F8F8F8]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-[#225260]">Latest News</h2>
-          <p className="text-red-500">Error loading articles. Please try again later.</p>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-[#225260]">Últimas Notícias</h2>
+          <p className="text-red-500">Erro ao carregar artigos. Por favor, tente novamente mais tarde.</p>
         </div>
       </section>
     );
@@ -59,9 +59,9 @@ const BlogSection = () => {
     <section className="py-16 bg-[#F8F8F8]">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif text-[#225260]">Latest News</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-[#225260]">Últimas Notícias</h2>
           <Link href="/blog">
-            <a className="text-[#5B412A] hover:text-[#5B412A]/80 font-medium">View All Articles →</a>
+            <a className="text-[#5B412A] hover:text-[#5B412A]/80 font-medium">Ver Todos os Artigos →</a>
           </Link>
         </div>
         
