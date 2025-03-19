@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 197 41% 25%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 33 34% 26%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 33 34% 86%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Blinds animation effect */
+  .blinds-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .blinds-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+      rgba(255,255,255,0) 0%, 
+      rgba(255,255,255,0) 10%, 
+      #225260 10%, 
+      #225260 20%, 
+      rgba(255,255,255,0) 20%, 
+      rgba(255,255,255,0) 30%, 
+      #225260 30%, 
+      #225260 40%, 
+      rgba(255,255,255,0) 40%, 
+      rgba(255,255,255,0) 50%, 
+      #225260 50%, 
+      #225260 60%, 
+      rgba(255,255,255,0) 60%, 
+      rgba(255,255,255,0) 70%, 
+      #225260 70%, 
+      #225260 80%, 
+      rgba(255,255,255,0) 80%, 
+      rgba(255,255,255,0) 90%, 
+      #225260 90%, 
+      #225260 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .blinds-effect:hover::before {
+    opacity: 0.3;
+  }
+}
