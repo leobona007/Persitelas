@@ -31,7 +31,7 @@ const Header = () => {
           <Link href="/" className="flex items-center">
             <h1 className="text-2xl font-serif font-bold text-[#225260]">
               <span>Gardis</span>
-              <span className="text-sm block font-sans text-[#5B412A]">Blinds & Curtains</span>
+              <span className="text-sm block font-sans text-[#5B412A]">Persianas & Cortinas</span>
             </h1>
           </Link>
         </div>
@@ -39,16 +39,16 @@ const Header = () => {
         {/* Main Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className={`hover:text-[#5B412A] font-medium ${location === '/' ? 'text-[#225260] border-b-2 border-[#225260]' : 'text-gray-600'}`}>
-            Home
+            Início
           </Link>
           <Link href="/products" className={`hover:text-[#225260] font-medium ${location === '/products' ? 'text-[#225260] border-b-2 border-[#225260]' : 'text-gray-600'}`}>
-            Products
+            Produtos
           </Link>
           <Link href="/about" className={`hover:text-[#225260] font-medium ${location === '/about' ? 'text-[#225260] border-b-2 border-[#225260]' : 'text-gray-600'}`}>
-            About
+            Sobre
           </Link>
           <Link href="/contact" className={`hover:text-[#225260] font-medium ${location === '/contact' ? 'text-[#225260] border-b-2 border-[#225260]' : 'text-gray-600'}`}>
-            Contact
+            Contato
           </Link>
         </nav>
 
@@ -86,16 +86,16 @@ const Header = () => {
       <div className={`md:hidden bg-white shadow-md ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-4">
           <Link href="/" className={`py-2 border-b border-gray-100 ${location === '/' ? 'text-[#225260]' : 'text-gray-600 hover:text-[#225260]'} font-medium`}>
-            Home
+            Início
           </Link>
           <Link href="/products" className={`py-2 border-b border-gray-100 ${location === '/products' ? 'text-[#225260]' : 'text-gray-600 hover:text-[#225260]'} font-medium`}>
-            Products
+            Produtos
           </Link>
           <Link href="/about" className={`py-2 border-b border-gray-100 ${location === '/about' ? 'text-[#225260]' : 'text-gray-600 hover:text-[#225260]'} font-medium`}>
-            About
+            Sobre
           </Link>
           <Link href="/contact" className={`py-2 ${location === '/contact' ? 'text-[#225260]' : 'text-gray-600 hover:text-[#225260]'} font-medium`}>
-            Contact
+            Contato
           </Link>
         </div>
       </div>
