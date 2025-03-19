@@ -13,7 +13,7 @@ const CategorySection = () => {
     return (
       <section className="py-16 bg-[#F8F8F8]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12 text-[#225260]">Our Products</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12 text-[#225260]">Nossos Produtos</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="bg-white shadow-md h-96 animate-pulse">
@@ -35,8 +35,8 @@ const CategorySection = () => {
     return (
       <section className="py-16 bg-[#F8F8F8]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-[#225260]">Our Products</h2>
-          <p className="text-red-500">Error loading categories. Please try again later.</p>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-[#225260]">Nossos Produtos</h2>
+          <p className="text-red-500">Erro ao carregar categorias. Por favor, tente novamente mais tarde.</p>
         </div>
       </section>
     );
@@ -45,7 +45,7 @@ const CategorySection = () => {
   return (
     <section className="py-16 bg-[#F8F8F8]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12 text-[#225260]">Our Products</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12 text-[#225260]">Nossos Produtos</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories?.map((category) => (
             <div key={category.id} className="bg-white shadow-md overflow-hidden group transition-all duration-300 hover:shadow-lg">
@@ -61,7 +61,7 @@ const CategorySection = () => {
                 <p className="text-gray-600">{category.description}</p>
                 <Link href={`/products?category=${category.slug}`}>
                   <a className="text-[#5B412A] font-medium inline-block mt-4 hover:underline">
-                    Explore Collection →
+                    Explorar Coleção →
                   </a>
                 </Link>
               </div>

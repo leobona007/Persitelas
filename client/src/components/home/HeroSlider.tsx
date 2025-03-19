@@ -15,20 +15,20 @@ interface Slide {
 const slides: Slide[] = [
   {
     image: 'https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg',
-    title: 'Inspired Design For Everyday Spaces',
-    subtitle: 'Elevate your home with our premium blinds and curtains, crafted for lasting beauty and superior functionality.',
+    title: 'Design Inspirado Para Espaços do Dia a Dia',
+    subtitle: 'Eleve sua casa com nossas persianas e cortinas premium, criadas para beleza duradoura e funcionalidade superior.',
     cta: {
-      text: 'Shop Now',
+      text: 'Comprar Agora',
       link: '/products'
     }
   },
   {
     image: 'https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg',
-    title: 'Premium Blinds For The Modern Home',
-    subtitle: 'Discover our collection of custom blinds, designed to complement any space with perfect light control.',
+    title: 'Persianas Premium Para o Lar Moderno',
+    subtitle: 'Descubra nossa coleção de persianas personalizadas, projetadas para complementar qualquer espaço com controle perfeito de luz.',
     cta: {
-      text: 'View Collection',
-      link: '/products?category=blinds'
+      text: 'Ver Coleção',
+      link: '/products?category=persianas'
     }
   }
 ];
