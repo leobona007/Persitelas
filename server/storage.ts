@@ -69,22 +69,22 @@ export class MemStorage implements IStorage {
     // Initialize categories
     const categories: InsertCategory[] = [
       {
-        name: "Curtains",
-        description: "An irresistible range of decorative home accessories so brighten up your home",
+        name: "Cortinas",
+        description: "Uma variedade irresistível de acessórios decorativos para iluminar sua casa",
         image: "https://images.pexels.com/photos/3620234/pexels-photo-3620234.jpeg",
-        slug: "curtains"
+        slug: "cortinas"
       },
       {
-        name: "Blinds",
-        description: "Our window blinds are versatile and stylish with practical screening and shade",
+        name: "Persianas",
+        description: "Nossas persianas são versáteis e elegantes, oferecendo proteção e sombra prática",
         image: "https://images.pexels.com/photos/1267318/pexels-photo-1267318.jpeg",
-        slug: "blinds"
+        slug: "persianas"
       },
       {
-        name: "Accessories",
-        description: "An irresistible range of decorative home accessories so brighten up your home",
+        name: "Acessórios",
+        description: "Uma variedade irresistível de acessórios decorativos para iluminar sua casa",
         image: "https://images.pexels.com/photos/945688/pexels-photo-945688.jpeg",
-        slug: "accessories"
+        slug: "acessorios"
       }
     ];
     
@@ -93,34 +93,34 @@ export class MemStorage implements IStorage {
     // Initialize products
     const products: InsertProduct[] = [
       {
-        name: "Zen Duck Egg Plain Eyelet Curtains",
-        description: "These elegant curtains bring a soft, calming presence to your space with their duck egg blue tone. Perfect for contemporary interiors seeking a subtle touch of color.",
-        shortDescription: "Elegant duck egg blue curtains with eyelet design for easy installation",
-        price: "$55.99",
-        priceRange: "$55.99 – $60.99",
+        name: "Cortinas Zen Azul Ovo de Pato",
+        description: "Estas elegantes cortinas trazem uma presença suave e calmante para seu espaço com seu tom azul ovo de pato. Perfeito para interiores contemporâneos que buscam um toque sutil de cor.",
+        shortDescription: "Elegantes cortinas azul ovo de pato com design de ilhós para fácil instalação",
+        price: "R$279,90",
+        priceRange: "R$279,90 – R$299,90",
         images: ["https://images.pexels.com/photos/1753210/pexels-photo-1753210.jpeg"],
-        category: "curtains",
+        category: "cortinas",
         isFeatured: true,
         isOnSale: false,
         rating: 4,
         reviewCount: 24,
-        options: { sizes: ["Small", "Medium", "Large"] },
-        slug: "zen-duck-egg-plain-eyelet-curtains"
+        options: { sizes: ["Pequeno", "Médio", "Grande"] },
+        slug: "cortinas-zen-azul-ovo-de-pato"
       },
       {
-        name: "Suedine Chocolate Plain Woven Eyelet Curtains",
-        description: "Add a touch of luxury with these chocolate-toned curtains featuring a suedine finish. The woven fabric offers both durability and style for sophisticated room settings.",
-        shortDescription: "Luxurious chocolate-toned curtains with suedine finish",
-        price: "$57.99",
-        priceRange: "$57.99 – $58.99",
+        name: "Cortinas Suedine Chocolate com Ilhós",
+        description: "Adicione um toque de luxo com essas cortinas em tom chocolate com acabamento em suedine. O tecido tecido oferece durabilidade e estilo para ambientes sofisticados.",
+        shortDescription: "Luxuosas cortinas em tom chocolate com acabamento em suedine",
+        price: "R$289,90",
+        priceRange: "R$289,90 – R$299,90",
         images: ["https://images.pexels.com/photos/276651/pexels-photo-276651.jpeg"],
-        category: "curtains",
+        category: "cortinas",
         isFeatured: true,
         isOnSale: true,
         rating: 5,
         reviewCount: 16,
-        options: { sizes: ["Medium", "Large"] },
-        slug: "suedine-chocolate-plain-woven-eyelet-curtains"
+        options: { sizes: ["Médio", "Grande"] },
+        slug: "cortinas-suedine-chocolate-com-ilhos"
       },
       {
         name: "Salla Ecru Plain Woven Eyelet Lined Curtains",
@@ -234,21 +234,21 @@ export class MemStorage implements IStorage {
     // Initialize testimonials
     const testimonials: InsertTestimonial[] = [
       {
-        name: "Helen Golden",
-        role: "Customer",
-        content: "I chose Gardis because of their speed of response, creativity of ideas, range, professionalism and efficiency. Very happy.",
+        name: "Helena Dourado",
+        role: "Cliente",
+        content: "Escolhi a Gardis pela rapidez de resposta, criatividade de ideias, variedade, profissionalismo e eficiência. Muito satisfeita.",
         rating: 5
       },
       {
-        name: "Betty Arnold",
-        role: "Customer",
-        content: "Just came last night to find my new bamboo blinds installed. Thanks to Gardis team for their professionalism.",
+        name: "Beatriz Arnaldo",
+        role: "Cliente",
+        content: "Cheguei ontem à noite e encontrei minhas novas persianas de bambu instaladas. Obrigada à equipe da Gardis pelo profissionalismo.",
         rating: 5
       },
       {
-        name: "Jocelyn Boyd",
-        role: "Customer",
-        content: "I would recommend Gardis to friends – the staff were outstanding from a knowledge and customer service point of view.",
+        name: "Jocelina Borges",
+        role: "Cliente",
+        content: "Eu recomendaria a Gardis para amigos - a equipe foi excepcional do ponto de vista de conhecimento e atendimento ao cliente.",
         rating: 5
       }
     ];
@@ -258,28 +258,28 @@ export class MemStorage implements IStorage {
     // Initialize articles
     const articles: InsertArticle[] = [
       {
-        title: "This Seasons Must-Have Styles",
-        content: "Discover the latest trends in window treatments that are taking the design world by storm this season. From bold patterns to minimalist designs, we explore what's hot in the world of curtains and blinds.",
-        excerpt: "Discover the latest trends in window treatments that are taking the design world by storm this season.",
+        title: "Estilos Imperdíveis desta Temporada",
+        content: "Descubra as últimas tendências em tratamentos para janelas que estão dominando o mundo do design nesta temporada. De padrões ousados a designs minimalistas, exploramos o que está em alta no mundo das cortinas e persianas.",
+        excerpt: "Descubra as últimas tendências em tratamentos para janelas que estão dominando o mundo do design nesta temporada.",
         image: "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg",
-        publishDate: "June 12, 2023",
-        slug: "this-seasons-must-have-styles"
+        publishDate: "12 de Junho de 2023",
+        slug: "estilos-imperdiveis-desta-temporada"
       },
       {
-        title: "The Best Noise Reducing Blinds for Windows",
-        content: "Learn how the right window treatments can significantly reduce noise and create a more peaceful home environment. We discuss the best materials and designs for sound insulation.",
-        excerpt: "Learn how the right window treatments can significantly reduce noise and create a more peaceful home environment.",
+        title: "As Melhores Persianas para Redução de Ruído",
+        content: "Aprenda como os tratamentos certos para janelas podem reduzir significativamente o ruído e criar um ambiente doméstico mais tranquilo. Discutimos os melhores materiais e designs para isolamento acústico.",
+        excerpt: "Aprenda como os tratamentos certos para janelas podem reduzir significativamente o ruído e criar um ambiente doméstico mais tranquilo.",
         image: "https://images.pexels.com/photos/3935321/pexels-photo-3935321.jpeg",
-        publishDate: "June 12, 2023",
-        slug: "best-noise-reducing-blinds-for-windows"
+        publishDate: "12 de Junho de 2023",
+        slug: "melhores-persianas-para-reducao-de-ruido"
       },
       {
-        title: "The Best Blinds And Window Awnings",
-        content: "Compare the benefits of various window treatment options to find the perfect solution for your specific needs. From light filtering to privacy, we cover all aspects to consider.",
-        excerpt: "Compare the benefits of various window treatment options to find the perfect solution for your specific needs.",
+        title: "As Melhores Persianas e Toldos para Janelas",
+        content: "Compare os benefícios de várias opções de tratamento de janelas para encontrar a solução perfeita para suas necessidades específicas. Da filtragem de luz à privacidade, abordamos todos os aspectos a serem considerados.",
+        excerpt: "Compare os benefícios de várias opções de tratamento de janelas para encontrar a solução perfeita para suas necessidades específicas.",
         image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-        publishDate: "June 12, 2023",
-        slug: "best-blinds-and-window-awnings"
+        publishDate: "12 de Junho de 2023",
+        slug: "melhores-persianas-e-toldos-para-janelas"
       }
     ];
     
