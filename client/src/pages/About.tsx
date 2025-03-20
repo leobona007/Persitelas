@@ -27,7 +27,7 @@ const About = () => {
               animate="visible"
               variants={fadeIn}
             >
-              <h1 className="text-4xl md:text-5xl font-serif mb-6">About Us</h1>
+              <h1 className="text-4xl md:text-5xl font-serif mb-6">Sobre Nós</h1>
               <p className="text-lg">
                 Gardis has been a trusted name in window treatments since 1978. 
                 Our family-run business takes pride in providing high-quality blinds, 

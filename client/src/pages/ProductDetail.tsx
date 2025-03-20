@@ -17,6 +17,11 @@ const ProductDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
   
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   useEffect(() => {
     const loadProduct = async () => {
       if (!slug) return;
@@ -135,11 +140,11 @@ const ProductDetail = () => {
             <div className="w-full md:w-1/2">
               <h1 className="text-3xl font-serif text-[#225260] mb-2">{product.name}</h1>
               
-              <div className="flex items-center gap-2 mb-4">
+              {/* <div className="flex items-center gap-2 mb-4">
                 <div className="flex text-yellow-400">
                 </div>
                 <span className="text-gray-500">({product.reviewCount} reviews)</span>
-              </div>
+              </div> */}
               
               <div className="text-2xl font-medium text-[#5B412A] mb-6">
                 {product.price}
@@ -150,7 +155,7 @@ const ProductDetail = () => {
               </div>
               
               {}
-              {product.options && Object.entries(product.options).map(([optionType, values]) => (
+              {/* {product.options && Object.entries(product.options).map(([optionType, values]) => (
                 <div key={optionType} className="mb-6">
                   <h3 className="text-lg font-medium text-[#225260] mb-2 capitalize">{optionType}</h3>
                   <div className="flex flex-wrap gap-2">
@@ -165,9 +170,9 @@ const ProductDetail = () => {
                     ))}
                   </div>
                 </div>
-              ))}
+              ))} */}
               
-              {/* Quantity */}
+              {/* Quantity
               <div className="mb-6">
                 <h3 className="text-lg font-medium text-[#225260] mb-2">Quantity</h3>
                 <div className="flex items-center">
@@ -191,9 +196,9 @@ const ProductDetail = () => {
                     <i className="fas fa-plus"></i>
                   </button>
                 </div>
-              </div>
+              </div> */}
               
-              {/* Add to Cart */}
+              {/* Add to Cart
               <motion.button
                 className="w-full bg-[#225260] text-white px-6 py-3 rounded-md hover:bg-[#225260]/90 transition mb-4"
                 onClick={handleAddToCart}
@@ -201,22 +206,22 @@ const ProductDetail = () => {
               >
                 Add to Cart
               </motion.button>
-              
-              {/* Wishlist */}
+               */}
+              {/* Wishlist
               <button className="w-full border border-[#5B412A] text-[#5B412A] px-6 py-3 rounded-md hover:bg-[#5B412A] hover:text-white transition flex items-center justify-center">
                 <i className="far fa-heart mr-2"></i>
                 Add to Wishlist
-              </button>
+              </button> */}
               
               {/* Additional Info */}
               <div className="mt-8 border-t border-gray-200 pt-6">
                 <div className="flex items-center text-gray-600 mb-2">
-                  <i className="fas fa-truck mr-2"></i>
-                  <span>Free shipping on orders over $100</span>
+                  <i className="fas fa-medal mr-2"></i>
+                  <span>Materia Prima de Primeira Linha = Resultado Excepicional</span>
                 </div>
                 <div className="flex items-center text-gray-600">
-                  <i className="fas fa-sync-alt mr-2"></i>
-                  <span>30-day returns policy</span>
+                  <i className="fas fa-shield mr-2"></i>
+                  <span>3 Anos de Garantia</span>
                 </div>
               </div>
             </div>

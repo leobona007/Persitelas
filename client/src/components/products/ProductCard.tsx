@@ -41,14 +41,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="bg-white shadow-md overflow-hidden group transition-all duration-300 hover:shadow-lg relative">
       <div className="absolute top-4 right-4 z-10">
-        <button 
-          className="bg-white w-9 h-9 rounded-full flex items-center justify-center shadow-md transition hover:bg-[#5B412A] hover:text-white"
-          onClick={handleFavoriteClick}
-          aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
-        >
-          <i className={`${isFavorite ? 'fas' : 'far'} fa-heart text-[#5B412A] group-hover:text-white`}></i>
-        </button>
-      </div>
+            </div>
       
       <Link href={`/products/${product.slug}`}>
         <a>

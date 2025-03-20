@@ -106,8 +106,7 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_proteção_janela.jpeg',
-      '/public/tela_proteção_janela_2.jpeg',
+            '/public/tela_proteção_janela_2.jpeg',
       '/public/tela_proteção_janela_3.jpeg'
     ],
     category: 'telas-de-proteção',
@@ -154,7 +153,7 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_proteção_escadas.jpeg',
+      '/public/tela_proteção_escadas.webp',
       '/public/tela_proteção_sacada.jpeg',
       '/public/tela_proteção_sacada_2.jpeg'
     ],
