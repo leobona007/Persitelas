@@ -1,7 +1,7 @@
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
-import Header from "@/components/layout/Header";
+import Header, { WhatsAppButton } from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
@@ -30,6 +30,7 @@ function App() {
         <Router />
       </main>
       <Footer />
+      <WhatsAppButton />
       <Toaster />
     </div>
   );

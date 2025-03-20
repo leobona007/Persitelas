@@ -65,8 +65,13 @@ const Header = () => {
 
           {/* Instagram Icon */}
           <div className="relative">
-            <a href="https://www.instagram.com/persitelas/" target="_blank" rel="noopener noreferrer" className="text-[#225260] hover:text-[#5B412A]">
-              <i className="fab fa-instagram text-xl"></i>
+            <a 
+              href="https://www.instagram.com/persitelas/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center p-2 rounded-full bg-gradient-to-r from-[#405DE6] via-[#5851DB] to-[#833AB4] text-white hover:shadow-lg transition-all duration-300"
+            >
+              <i className="fab fa-instagram text-2xl"></i>
             </a>
           </div>
 
@@ -98,6 +103,21 @@ const Header = () => {
         </div>
       </div>
     </header>
+  );
+};
+
+// WhatsApp Floating Button
+export const WhatsAppButton = () => {
+  return (
+    <a
+      href="https://wa.me/5551992233031"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20BA5C] hover:scale-110 transition-all duration-300"
+      aria-label="Contact us on WhatsApp"
+    >
+      <i className="fab fa-whatsapp text-3xl"></i>
+    </a>
   );
 };
 
