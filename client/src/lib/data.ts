@@ -73,11 +73,27 @@ export async function fetchCategoryBySlug(slug: string): Promise<Category> {
 }
 
 /**
- * Fetch all testimonials
+ * Fetch all testimonials, including Google reviews if available
  */
 export async function fetchTestimonials(): Promise<Testimonial[]> {
-  // Return static testimonials data
-  return Promise.resolve(testimonials);
+  try {
+    // Import the Google Maps service to fetch reviews
+    const { fetchGoogleReviews } = await import('./googleMapsService');
+    
+    // Fetch Google reviews
+    const googleReviews = await fetchGoogleReviews();
+    
+    // Combine static testimonials with Google reviews
+    // We'll put Google reviews first as they're likely more recent
+    const allTestimonials = [...googleReviews, ...testimonials];
+    
+    // Return combined testimonials
+    return Promise.resolve(allTestimonials);
+  } catch (error) {
+    console.error('Error fetching Google reviews:', error);
+    // If there's an error with Google reviews, fall back to static testimonials
+    return Promise.resolve(testimonials);
+  }
 }
 
 /**
