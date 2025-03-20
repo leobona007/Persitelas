@@ -17,9 +17,9 @@ const Home = () => {
       
       <div>
         <HeroSlider />
-        <CategorySection />
         <AboutSection />
-        <FeaturedProducts />
+        <CategorySection />
+        {/* <FeaturedProducts /> */}
         <TestimonialsSection />
         <BlogSection />
         <NewsletterSection />

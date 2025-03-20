@@ -201,32 +201,32 @@ export const products: Product[] = [
 export const categories: Category[] = [
   {
     id: 1,
-    name: 'Blinds',
-    description: 'Explore our collection of premium blinds, including roller, venetian, vertical, and wooden options.',
-    image: '/images/categories/blinds.jpg',
+    name: 'Persianas',
+    description: 'Conheça nossos modelos Personalizados que elevam o design do seu ambiente.',
+    image: '/public/Persiana_Romana.jpg',
     slug: 'blinds'
   },
   {
     id: 2,
-    name: 'Curtains',
-    description: 'Discover our elegant curtain collection, from sheer to blackout, designed to enhance any room.',
-    image: '/images/categories/curtains.jpg',
+    name: 'Telas de Proteção',
+    description: 'Telas totalmente adaptaveis a tua necessidade de proteção!',
+    image: '/public/tela-de-protecao-piscina.webp',
     slug: 'curtains'
   },
   {
     id: 3,
-    name: 'Shades',
-    description: 'Browse our innovative window shades, including cellular, roller, and roman designs for modern homes.',
-    image: '/images/categories/shades.jpg',
+    name: 'Mosquiteiras',
+    description: 'Traga conforto em sentir aquele ar gostoso entrando sem a companhia dos mosquitos.',
+    image: '/public/Tela_mosquito.jpg',
     slug: 'shades'
   },
-  {
-    id: 4,
-    name: 'Accessories',
-    description: 'Complete your window treatments with our premium accessories, including rods, tiebacks, and more.',
-    image: '/images/categories/accessories.jpg',
-    slug: 'accessories'
-  }
+  // {
+  //   id: 4,
+  //   name: 'Accessories',
+  //   description: 'Complete your window treatments with our premium accessories, including rods, tiebacks, and more.',
+  //   image: '/images/categories/accessories.jpg',
+  //   slug: 'accessories'
+  // }
 ];
 
 // Static data for testimonials
