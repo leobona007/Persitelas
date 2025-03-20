@@ -1,13 +1,29 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
 import BlindsAnimation from '@/components/ui/blinds-animation';
 import { Category } from '@shared/schema';
+import { fetchCategories } from '@/lib/data';
 
 const CategorySection = () => {
-  const { data: categories, isLoading, error } = useQuery<Category[]>({
-    queryKey: ['/api/categories'],
-  });
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+  
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        setIsLoading(true);
+        const categoriesData = await fetchCategories();
+        setCategories(categoriesData);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load categories'));
+        setIsLoading(false);
+      }
+    };
+    
+    loadCategories();
+  }, []);
   
   if (isLoading) {
     return (

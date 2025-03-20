@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
 import { Product } from '@shared/schema';
 import { useToast } from '@/hooks/use-toast';
 import BlindsAnimation from '@/components/ui/blinds-animation';
 import { motion } from 'framer-motion';
+import { fetchProductBySlug } from '@/lib/data';
 
 const ProductDetail = () => {
   const { slug } = useParams();
@@ -13,9 +13,27 @@ const ProductDetail = () => {
   const [selectedOptions, setSelectedOptions] = useState<Record<string, string>>({});
   const { toast } = useToast();
   
-  const { data: product, isLoading, error } = useQuery<Product>({
-    queryKey: [`/api/products/${slug}`],
-  });
+  const [product, setProduct] = useState<Product | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+  
+  useEffect(() => {
+    const loadProduct = async () => {
+      if (!slug) return;
+      
+      try {
+        setIsLoading(true);
+        const productData = await fetchProductBySlug(slug);
+        setProduct(productData);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load product'));
+        setIsLoading(false);
+      }
+    };
+    
+    loadProduct();
+  }, [slug]);
   
   const handleAddToCart = () => {
     toast({
@@ -119,7 +137,6 @@ const ProductDetail = () => {
               
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex text-yellow-400">
-                  {renderStars(product.rating)}
                 </div>
                 <span className="text-gray-500">({product.reviewCount} reviews)</span>
               </div>
@@ -132,7 +149,7 @@ const ProductDetail = () => {
                 <p>{product.description}</p>
               </div>
               
-              {/* Product Options */}
+              {}
               {product.options && Object.entries(product.options).map(([optionType, values]) => (
                 <div key={optionType} className="mb-6">
                   <h3 className="text-lg font-medium text-[#225260] mb-2 capitalize">{optionType}</h3>

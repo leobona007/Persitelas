@@ -1,18 +1,28 @@
 import { Link } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
+import { useState, useEffect } from 'react';
 import { Article } from '@shared/schema';
+import { fetchArticles } from '@/lib/data';
 
 const BlogSection = () => {
-  const { data: articles, isLoading, error } = useQuery<Article[]>({
-    queryKey: ['/api/articles'],
-    queryFn: async () => {
-      const res = await fetch('/api/articles?limit=3');
-      if (!res.ok) {
-        throw new Error('Failed to fetch articles');
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+  
+  useEffect(() => {
+    const loadArticles = async () => {
+      try {
+        setIsLoading(true);
+        const articlesData = await fetchArticles(3); // Limit to 3 articles
+        setArticles(articlesData);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load articles'));
+        setIsLoading(false);
       }
-      return res.json();
-    },
-  });
+    };
+    
+    loadArticles();
+  }, []);
 
   if (isLoading) {
     return (

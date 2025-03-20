@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
 import { Helmet } from 'react-helmet';
 import ProductCard from '@/components/products/ProductCard';
 import { Product, Category } from '@shared/schema';
+import { fetchProducts, fetchCategories, fetchProductsByCategory } from '@/lib/data';
 
 const Products = () => {
   const [location] = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
   
   // Parse the query params from URL
   useEffect(() => {
@@ -19,14 +23,42 @@ const Products = () => {
   }, [location]);
   
   // Fetch categories
-  const { data: categories } = useQuery<Category[]>({
-    queryKey: ['/api/categories'],
-  });
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const categoriesData = await fetchCategories();
+        setCategories(categoriesData);
+      } catch (err) {
+        console.error('Failed to load categories:', err);
+      }
+    };
+    
+    loadCategories();
+  }, []);
   
   // Fetch products based on selected category
-  const { data: products, isLoading, error } = useQuery<Product[]>({
-    queryKey: [selectedCategory ? `/api/products/category/${selectedCategory}` : '/api/products'],
-  });
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        setIsLoading(true);
+        let productsData;
+        
+        if (selectedCategory) {
+          productsData = await fetchProductsByCategory(selectedCategory);
+        } else {
+          productsData = await fetchProducts();
+        }
+        
+        setProducts(productsData);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load products'));
+        setIsLoading(false);
+      }
+    };
+    
+    loadProducts();
+  }, [selectedCategory]);
   
   const handleCategoryChange = (categorySlug: string | null) => {
     setSelectedCategory(categorySlug);

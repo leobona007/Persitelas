@@ -1,12 +1,29 @@
 import { Link } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
+import { useState, useEffect } from 'react';
 import ProductCard from '@/components/products/ProductCard';
 import { Product } from '@shared/schema';
+import { fetchFeaturedProducts } from '@/lib/data';
 
 const FeaturedProducts = () => {
-  const { data: products, isLoading, error } = useQuery<Product[]>({
-    queryKey: ['/api/products/featured'],
-  });
+  const [products, setProducts] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+  
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        setIsLoading(true);
+        const featuredProducts = await fetchFeaturedProducts();
+        setProducts(featuredProducts);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load products'));
+        setIsLoading(false);
+      }
+    };
+    
+    loadProducts();
+  }, []);
   
   if (isLoading) {
     return (

@@ -1,5 +1,6 @@
-import { useQuery } from '@tanstack/react-query';
+import { useState, useEffect } from 'react';
 import { Testimonial } from '@shared/schema';
+import { fetchTestimonials } from '@/lib/data';
 
 const renderStars = (rating: number | null) => {
   const ratingValue = rating || 0;
@@ -9,9 +10,25 @@ const renderStars = (rating: number | null) => {
 };
 
 const TestimonialsSection = () => {
-  const { data: testimonials, isLoading, error } = useQuery<Testimonial[]>({
-    queryKey: ['/api/testimonials'],
-  });
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+  
+  useEffect(() => {
+    const loadTestimonials = async () => {
+      try {
+        setIsLoading(true);
+        const testimonialsData = await fetchTestimonials();
+        setTestimonials(testimonialsData);
+        setIsLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err : new Error('Failed to load testimonials'));
+        setIsLoading(false);
+      }
+    };
+    
+    loadTestimonials();
+  }, []);
 
   if (isLoading) {
     return (

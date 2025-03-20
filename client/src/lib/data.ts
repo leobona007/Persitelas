@@ -1,107 +1,111 @@
 import { Product, Category, Testimonial, Article } from '@shared/schema';
+import { products, categories, testimonials, articles } from './staticData';
 
-// This file provides type-safe interfaces to access our API data
-// The actual data is stored on the server and accessed via API calls
+// This file provides type-safe interfaces to access our data
+// The data is now stored statically in the frontend
 
 /**
  * Fetch all products
  */
 export async function fetchProducts(): Promise<Product[]> {
-  const response = await fetch('/api/products');
-  if (!response.ok) {
-    throw new Error(`Error fetching products: ${response.statusText}`);
-  }
-  return response.json();
+  // Return static data instead of API call
+  return Promise.resolve(products);
 }
 
 /**
  * Fetch products by category
  */
 export async function fetchProductsByCategory(categorySlug: string): Promise<Product[]> {
-  const response = await fetch(`/api/products/category/${categorySlug}`);
-  if (!response.ok) {
-    throw new Error(`Error fetching products by category: ${response.statusText}`);
-  }
-  return response.json();
+  // Filter products by category from static data
+  const filteredProducts = products.filter(product => product.category === categorySlug);
+  return Promise.resolve(filteredProducts);
 }
 
 /**
  * Fetch featured products
  */
 export async function fetchFeaturedProducts(limit?: number): Promise<Product[]> {
-  const url = limit ? `/api/products/featured?limit=${limit}` : '/api/products/featured';
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Error fetching featured products: ${response.statusText}`);
+  // Filter featured products from static data
+  let featuredProducts = products.filter(product => product.isFeatured);
+  
+  // Apply limit if provided
+  if (limit && limit > 0) {
+    featuredProducts = featuredProducts.slice(0, limit);
   }
-  return response.json();
+  
+  return Promise.resolve(featuredProducts);
 }
 
 /**
  * Fetch a single product by slug
  */
 export async function fetchProductBySlug(slug: string): Promise<Product> {
-  const response = await fetch(`/api/products/${slug}`);
-  if (!response.ok) {
-    throw new Error(`Error fetching product: ${response.statusText}`);
+  // Find product by slug from static data
+  const product = products.find(p => p.slug === slug);
+  
+  if (!product) {
+    throw new Error(`Product not found: ${slug}`);
   }
-  return response.json();
+  
+  return Promise.resolve(product);
 }
 
 /**
  * Fetch all categories
  */
 export async function fetchCategories(): Promise<Category[]> {
-  const response = await fetch('/api/categories');
-  if (!response.ok) {
-    throw new Error(`Error fetching categories: ${response.statusText}`);
-  }
-  return response.json();
+  // Return static categories data
+  return Promise.resolve(categories);
 }
 
 /**
  * Fetch a single category by slug
  */
 export async function fetchCategoryBySlug(slug: string): Promise<Category> {
-  const response = await fetch(`/api/categories/${slug}`);
-  if (!response.ok) {
-    throw new Error(`Error fetching category: ${response.statusText}`);
+  // Find category by slug from static data
+  const category = categories.find(c => c.slug === slug);
+  
+  if (!category) {
+    throw new Error(`Category not found: ${slug}`);
   }
-  return response.json();
+  
+  return Promise.resolve(category);
 }
 
 /**
  * Fetch all testimonials
  */
 export async function fetchTestimonials(): Promise<Testimonial[]> {
-  const response = await fetch('/api/testimonials');
-  if (!response.ok) {
-    throw new Error(`Error fetching testimonials: ${response.statusText}`);
-  }
-  return response.json();
+  // Return static testimonials data
+  return Promise.resolve(testimonials);
 }
 
 /**
  * Fetch all blog articles, with optional limit
  */
 export async function fetchArticles(limit?: number): Promise<Article[]> {
-  const url = limit ? `/api/articles?limit=${limit}` : '/api/articles';
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Error fetching articles: ${response.statusText}`);
+  // Get articles from static data with optional limit
+  let result = articles;
+  
+  if (limit && limit > 0) {
+    result = result.slice(0, limit);
   }
-  return response.json();
+  
+  return Promise.resolve(result);
 }
 
 /**
  * Fetch a single article by slug
  */
 export async function fetchArticleBySlug(slug: string): Promise<Article> {
-  const response = await fetch(`/api/articles/${slug}`);
-  if (!response.ok) {
-    throw new Error(`Error fetching article: ${response.statusText}`);
+  // Find article by slug from static data
+  const article = articles.find(a => a.slug === slug);
+  
+  if (!article) {
+    throw new Error(`Article not found: ${slug}`);
   }
-  return response.json();
+  
+  return Promise.resolve(article);
 }
 
 /**
