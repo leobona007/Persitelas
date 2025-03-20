@@ -89,56 +89,53 @@ assegurando um ambiente mais protegido, confortável e harmonioso para você e s
             </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div 
-                className="bg-white p-6 rounded-lg shadow-md"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="text-3xl text-[#5B412A] mb-4">
-                  <i className="fas fa-star"></i>
-                </div>
-                <h3 className="text-xl font-medium text-[#225260] mb-3">Quality</h3>
-                <p className="text-gray-600">
-                  We never compromise on quality. Each product is carefully crafted using 
-                  premium materials to ensure durability and satisfaction.
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                className="bg-white p-6 rounded-lg shadow-md"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                <div className="text-3xl text-[#5B412A] mb-4">
-                  <i className="fas fa-heart"></i>
-                </div>
-                <h3 className="text-xl font-medium text-[#225260] mb-3">Customer Care</h3>
-                <p className="text-gray-600">
-                  We treat every customer like family, offering personalized service and 
-                  expert advice to help you find the perfect window solutions.
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                className="bg-white p-6 rounded-lg shadow-md"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <div className="text-3xl text-[#5B412A] mb-4">
-                  <i className="fas fa-leaf"></i>
-                </div>
-                <h3 className="text-xl font-medium text-[#225260] mb-3">Sustainability</h3>
-                <p className="text-gray-600">
-                  We're committed to eco-friendly practices, from sourcing sustainable materials 
-                  to reducing waste in our production process.
-                </p>
-              </motion.div>
+            <motion.div 
+  className="bg-white p-6 rounded-lg shadow-md"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+  <div className="text-3xl text-[#5B412A] mb-4">
+    <i className="fas fa-star"></i>
+  </div>
+  <h3 className="text-xl font-medium text-[#225260] mb-3">Qualidade</h3>
+  <p className="text-gray-600">
+    Não abrimos mão da qualidade. Cada produto é cuidadosamente fabricado com materiais premium, garantindo durabilidade e excelência em cada detalhe.
+  </p>
+</motion.div>
+
+<motion.div 
+  className="bg-white p-6 rounded-lg shadow-md"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+>
+  <div className="text-3xl text-[#5B412A] mb-4">
+    <i className="fas fa-heart"></i>
+  </div>
+  <h3 className="text-xl font-medium text-[#225260] mb-3">Atendimento Personalizado</h3>
+  <p className="text-gray-600">
+    Tratamos cada cliente como parte da família, oferecendo um atendimento próximo e consultoria especializada para encontrar a solução ideal.
+  </p>
+</motion.div>
+
+<motion.div 
+  className="bg-white p-6 rounded-lg shadow-md"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+>
+  <div className="text-3xl text-[#5B412A] mb-4">
+    <i className="fas fa-leaf"></i>
+  </div>
+  <h3 className="text-xl font-medium text-[#225260] mb-3">Sustentabilidade</h3>
+  <p className="text-gray-600">
+    Comprometidos com o meio ambiente, adotamos práticas sustentáveis que utilizam materiais eco-friendly e processos que minimizam o impacto ambiental.
+  </p>
+</motion.div>
             </div>
           </div>
         </div>
@@ -238,7 +235,7 @@ assegurando um ambiente mais protegido, confortável e harmonioso para você e s
           </div>
         </div> */}
         
-        {/* CTA */}
+        {/* CTA
         <div className="bg-[#5B412A] text-white py-16 mb-16">
           <div className="container mx-auto px-4 text-center">
             <motion.h2 
@@ -278,7 +275,7 @@ assegurando um ambiente mais protegido, confortável e harmonioso para você e s
               </Link>
             </motion.div>
           </div>
-        </div>
+        </div> */}
         
         {/* Testimonials Section */}
         <TestimonialsSection />
