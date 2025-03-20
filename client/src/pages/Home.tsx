@@ -6,6 +6,7 @@ import FeaturedProducts from '@/components/home/FeaturedProducts';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import BlogSection from '@/components/home/BlogSection';
 import NewsletterSection from '@/components/home/NewsletterSection';
+import GallerySection from '@/components/home/GallerySection';
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
         <CategorySection />
         {/* <FeaturedProducts /> */}
         <TestimonialsSection />
-        <BlogSection />
+        {/* <BlogSection /> */}
+        <GallerySection />
         <NewsletterSection />
       </div>
     </>

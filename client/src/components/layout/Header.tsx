@@ -110,7 +110,7 @@ const Header = () => {
 export const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5551992233031"
+      href="https://api.whatsapp.com/send/?phone=5551992233031&text=Ol%C3%A1%21+Vim+atrav%C3%A9s+do+seu+Site.+E+Gostaria+de+informa%C3%A7%C3%B5es+sobre+seus+serviços.&type=phone_number&app_absent=0"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20BA5C] hover:scale-110 transition-all duration-300"

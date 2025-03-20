@@ -7,22 +7,25 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-6">Gardis</h3>
+          <Link href="/" className="flex items-center">
+            <img 
+              src="/public/persianas_portoalegre.svg" 
+              alt="Persianas Porto Alegre" 
+              className="h-12"
+            />
+          </Link>
             <p className="text-white/80 mb-6">
-              Persianas e cortinas de qualidade de uma empresa familiar local desde 1978.
+              Persianas, Redes e Mosquiteiros de qualidade há mais de 10 anos no mercado.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#5B412A] transition">
+              <a href="https://www.facebook.com/portopersianas/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#5B412A] transition">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="text-white hover:text-[#5B412A] transition">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-white hover:text-[#5B412A] transition">
+              <a href="https://www.instagram.com/persitelas/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#5B412A] transition">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" className="text-white hover:text-[#5B412A] transition">
-                <i className="fab fa-pinterest-p"></i>
+              <a href="https://wa.me/5551992233031" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#5B412A] transition">
+                <i className="fab fa-whatsapp"></i>
               </a>
             </div>
           </div>
@@ -46,12 +49,7 @@ const Footer = () => {
                   Produtos
                 </Link>
               </li>
-              <li>
-                <Link href="/services" className="text-white/80 hover:text-white transition">
-                  Serviços
-                </Link>
-              </li>
-              <li>
+                          <li>
                 <Link href="/contact" className="text-white/80 hover:text-white transition">
                   Contato
                 </Link>
@@ -64,28 +62,18 @@ const Footer = () => {
             <h4 className="font-medium text-lg mb-6">Produtos</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/products?category=cortinas" className="text-white/80 hover:text-white transition">
-                  Cortinas
-                </Link>
-              </li>
-              <li>
-                <Link href="/products?category=persianas" className="text-white/80 hover:text-white transition">
+                <Link href="/products?category=blinds" className="text-white/80 hover:text-white transition">
                   Persianas
                 </Link>
               </li>
-              <li>
-                <Link href="/products?category=acessorios" className="text-white/80 hover:text-white transition">
-                  Acessórios
+                              <li>
+                <Link href="/products?category=curtains" className="text-white/80 hover:text-white transition">
+                  Tela Proteção
                 </Link>
               </li>
               <li>
-                <Link href="/products?new=true" className="text-white/80 hover:text-white transition">
-                  Novidades
-                </Link>
-              </li>
-              <li>
-                <Link href="/products?sale=true" className="text-white/80 hover:text-white transition">
-                  Ofertas Especiais
+                <Link href="/products?category=shades" className="text-white/80 hover:text-white transition">
+                  Mosquiteiras
                 </Link>
               </li>
             </ul>
@@ -118,7 +106,7 @@ const Footer = () => {
         {/* Copyright & Legal */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Gardis. Todos os direitos reservados.
+            © {new Date().getFullYear()} Persitelas. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/70 hover:text-white text-sm transition">

@@ -83,6 +83,12 @@ function getMockGoogleReviews(limit: number = 6): Testimonial[] {
         rating: 5,
         text: "Bom atendimento e produtos de qualidade. A instalação demorou um pouco mais do que o previsto, mas o resultado final compensou.",
         time: 1667890123
+      },
+      {
+        author_name: "João Pedro",
+        rating: 5,
+        text: "Serviço Excelente!!!! Os rapazes fizeram o roçamento na quarta e na quinta feira minha persiana já estava instalada! super recomendo!",
+        time: 1667890123
       }
     ]
   };
