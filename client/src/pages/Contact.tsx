@@ -108,7 +108,7 @@ const Contact = () => {
                   <h3 className="font-medium text-lg text-[#225260] mb-2">Contact Information</h3>
                   <p className="text-gray-600 mb-2">
                     <i className="fas fa-phone-alt mr-2 text-[#5B412A]"></i>
-                    800 123 4567
+                    (51) 99223-3031
                   </p>
                   <p className="text-gray-600 mb-2">
                     <i className="fas fa-envelope mr-2 text-[#5B412A]"></i>

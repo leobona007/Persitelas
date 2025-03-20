@@ -29,10 +29,11 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <h1 className="text-2xl font-serif font-bold text-[#225260]">
-              <span>Gardis</span>
-              <span className="text-sm block font-sans text-[#5B412A]">Persianas & Cortinas</span>
-            </h1>
+            <img 
+              src="/public/persianas_portoalegre.svg" 
+              alt="Persianas Porto Alegre" 
+              className="h-12"
+            />
           </Link>
         </div>
 
@@ -59,17 +60,14 @@ const Header = () => {
             <div className="text-[#225260] mr-2">
               <i className="fas fa-phone-alt"></i>
             </div>
-            <span className="text-sm font-medium">800 123 4567</span>
+            <span className="text-sm font-medium">(51) 99223-3031</span>
           </div>
 
-          {/* Cart Icon */}
+          {/* Instagram Icon */}
           <div className="relative">
-            <Link href="/cart" className="text-[#225260] hover:text-[#5B412A]">
-              <i className="fas fa-shopping-cart text-xl"></i>
-              <span className="absolute -top-2 -right-2 bg-[#5B412A] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
-            </Link>
+            <a href="https://www.instagram.com/persitelas/" target="_blank" rel="noopener noreferrer" className="text-[#225260] hover:text-[#5B412A]">
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
