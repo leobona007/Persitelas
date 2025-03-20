@@ -69,7 +69,7 @@ const Header = () => {
               href="https://www.instagram.com/persitelas/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center justify-center p-2 rounded-full bg-gradient-to-r from-[#405DE6] via-[#5851DB] to-[#833AB4] text-white hover:shadow-lg transition-all duration-300"
+              className="flex items-center justify-center p-2 rounded-full text-[#225260] hover:shadow-lg transition-all duration-300"
             >
               <i className="fab fa-instagram text-2xl"></i>
             </a>
