@@ -67,7 +67,7 @@ const HeroSlider = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2.5 }}
             className="absolute inset-0"
           >
             <div className="relative h-full w-full">
@@ -83,7 +83,7 @@ const HeroSlider = () => {
                     className="w-full md:w-1/2 text-white"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5, duration: 2.5 }}
+                    transition={{ delay: 0.5, duration: 0.8 }}
                   >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold">
                       {slides[currentSlide].title}

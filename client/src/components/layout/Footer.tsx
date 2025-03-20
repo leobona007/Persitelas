@@ -85,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-[#5B412A]"></i>
-                <span className="text-white/80">Rua Principal, 123, Cidade, SP 12345</span>
+                <span className="text-white/80">Av. Manoel Elias, 2433 - Porto alegre/RS</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone-alt mr-3 text-[#5B412A]"></i>
@@ -93,11 +93,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-3 text-[#5B412A]"></i>
-                <span className="text-white/80">contato@gardis.com</span>
+                <span className="text-white/80">contato@persitelas.com</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-clock mr-3 text-[#5B412A]"></i>
-                <span className="text-white/80">Seg-Sex: 9h - 18h</span>
+                <span className="text-white/80">Seg-Sex: 8h - 18h</span>
+              </li>
+              <li className="flex items-center">
+              <i className="fas fa-clock mr-3 text-[#5B412A]"></i>
+                <span className="text-white/80">Sabádo: 8h - 12h</span>
               </li>
             </ul>
           </div>
@@ -108,18 +112,7 @@ const Footer = () => {
           <p className="text-white/70 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Persitelas. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-white/70 hover:text-white text-sm transition">
-              Política de Privacidade
-            </a>
-            <a href="#" className="text-white/70 hover:text-white text-sm transition">
-              Termos e Condições
-            </a>
-            <a href="#" className="text-white/70 hover:text-white text-sm transition">
-              Política de Envio
-            </a>
-          </div>
-        </div>
+                 </div>
       </div>
     </footer>
   );

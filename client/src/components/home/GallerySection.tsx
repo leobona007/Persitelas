@@ -21,23 +21,23 @@ const fetchInstagramPhotos = async (limit: number = 6): Promise<GalleryItem[]> =
     },
     {
       id: '2',
-      image: 'https://scontent.cdninstagram.com/v/t51.29350-15/405409072_1112437223303714_8733520116518283840_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=Tn9LqQk-ARYAX_UXGWL&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0NTUyMzM1NzI1NTM2NzU5Mw%3D%3D.2-ccb7-5&oh=00_AfCHbvtlQNdgQhLYWZcTlwMYJDb-_aNWJpnQrJQgAn-Jrw&oe=65A9E5D0&_nc_sid=10d13b'
+      image: 'public/rede_de_proteção_sacada.jpeg'
     },
     {
       id: '3',
-      image: 'https://scontent.cdninstagram.com/v/t51.29350-15/405409072_1112437223303714_8733520116518283840_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=Tn9LqQk-ARYAX_UXGWL&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0NTUyMzM1NzI1NTM2NzU5Mw%3D%3D.2-ccb7-5&oh=00_AfCHbvtlQNdgQhLYWZcTlwMYJDb-_aNWJpnQrJQgAn-Jrw&oe=65A9E5D0&_nc_sid=10d13b'
+      image: 'public/persianas_double_vision.jpeg'
     },
     {
       id: '4',
-      image: 'https://scontent.cdninstagram.com/v/t51.29350-15/405409072_1112437223303714_8733520116518283840_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=Tn9LqQk-ARYAX_UXGWL&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0NTUyMzM1NzI1NTM2NzU5Mw%3D%3D.2-ccb7-5&oh=00_AfCHbvtlQNdgQhLYWZcTlwMYJDb-_aNWJpnQrJQgAn-Jrw&oe=65A9E5D0&_nc_sid=10d13b'
+      image: 'public/rede_proteção_externa.jpeg'
     },
     {
       id: '5',
-      image: 'https://scontent.cdninstagram.com/v/t51.29350-15/405409072_1112437223303714_8733520116518283840_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=Tn9LqQk-ARYAX_UXGWL&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0NTUyMzM1NzI1NTM2NzU5Mw%3D%3D.2-ccb7-5&oh=00_AfCHbvtlQNdgQhLYWZcTlwMYJDb-_aNWJpnQrJQgAn-Jrw&oe=65A9E5D0&_nc_sid=10d13b'
+      image: 'public/rede_proteção_piscina.jpeg'
     },
     {
       id: '6',
-      image: 'https://scontent.cdninstagram.com/v/t51.29350-15/405409072_1112437223303714_8733520116518283840_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=Tn9LqQk-ARYAX_UXGWL&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0NTUyMzM1NzI1NTM2NzU5Mw%3D%3D.2-ccb7-5&oh=00_AfCHbvtlQNdgQhLYWZcTlwMYJDb-_aNWJpnQrJQgAn-Jrw&oe=65A9E5D0&_nc_sid=10d13b'
+      image: 'public/persiana_double_visionn.jpeg'
     },
   ];
 
