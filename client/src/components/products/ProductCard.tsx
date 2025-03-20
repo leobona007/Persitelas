@@ -69,12 +69,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <h3 className="text-lg font-medium text-[#225260] mb-2">{product.name}</h3>
             
             <div className="flex items-center space-x-1 text-yellow-400 mb-3">
-              {renderStars()}
-              <span className="text-gray-500 text-sm ml-2">({product.reviewCount})</span>
+              {/* {renderStars()} */}
+              <span className="text-gray-500 text-sm ml-2">({product.description})</span>
             </div>
             
-            <div className="flex justify-between items-center">
-              <span className="text-[#5B412A] font-medium text-lg">{product.priceRange || product.price}</span>
+            {/* <div className="flex justify-between items-center">
+              
               <motion.span 
                 className="text-[#225260] hover:underline font-medium text-sm"
                 whileHover={{ x: 3 }}
@@ -82,7 +82,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               >
                 Select Options
               </motion.span>
-            </div>
+            </div> */}
           </div>
         </a>
       </Link>

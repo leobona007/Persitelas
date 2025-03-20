@@ -4,17 +4,17 @@ import { Product, Category, Testimonial, Article } from '@shared/schema';
 export const products: Product[] = [
   {
     id: 1,
-    name: 'Roller Blinds',
-    description: 'Our roller blinds combine functionality with style, offering a sleek and modern solution for any window. Available in a wide range of fabrics, colors, and opacity levels.',
-    shortDescription: 'Sleek, modern window coverings with various opacity options',
-    price: '89.99',
-    priceRange: '$89.99 - $199.99',
+    name: 'Persianas Romanas',
+    description: 'A Persiana Romana é sinônimo de elegância e funcionalidade, ideal para quem busca um toque refinado na decoração sem abrir mão da praticidade. Seu design sofisticado, composto por painéis estruturados que se dobram em camadas suaves ao serem recolhidos, proporciona um visual moderno e harmonioso para qualquer ambiente.',
+    shortDescription: 'Com design elegante e funcional, a Persiana Romana oferece controle de luz e privacidade, agregando estilo e conforto ao seu ambiente.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/roller-blinds-1.jpg',
-      '/images/products/roller-blinds-2.jpg',
-      '/images/products/roller-blinds-3.jpg'
+      '/public/persiana_romana_sala.jpg',
+      '/public/persiana_romana_sala_2.jpg',
+      '/public/persiana_romana_blackout.jpg'
     ],
-    category: 'blinds',
+    category: 'persianas',
     isFeatured: true,
     isOnSale: false,
     rating: 4.5,
@@ -24,23 +24,23 @@ export const products: Product[] = [
       materials: ['Polyester', 'Linen Blend', 'Blackout'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'roller-blinds'
+    slug: 'persianas-romanas'
   },
   {
     id: 2,
-    name: 'Venetian Blinds',
-    description: 'Classic venetian blinds offering excellent light control and privacy. Our aluminum and wooden options are durable, easy to clean, and complement any interior design.',
-    shortDescription: 'Classic slatted blinds with precise light control',
-    price: '109.99',
-    priceRange: '$109.99 - $259.99',
+    name: 'Persianas Double-Vision',
+    description: 'A Persiana Double Vision combina modernidade e funcionalidade, permitindo o ajuste perfeito entre luminosidade e privacidade. Seu design inovador conta com faixas translúcidas e opacas que se alternam, possibilitando diferentes níveis de iluminação sem abrir mão da elegância.',
+    shortDescription: 'Com faixas ajustáveis, a Persiana Double Vision permite regular a luz e a privacidade com elegância e praticidade.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/venetian-blinds-1.jpg',
-      '/images/products/venetian-blinds-2.jpg',
-      '/images/products/venetian-blinds-3.jpg'
+      '/public/persiana_double_vision_sala.png',
+      '/public/persiana_double_vision_sala_2.jpg',
+      '/public/persiana_double_vision_sala_3.webp'
     ],
-    category: 'blinds',
+    category: 'persianas',
     isFeatured: true,
-    isOnSale: true,
+    isOnSale: false,
     rating: 4.3,
     reviewCount: 95,
     options: {
@@ -48,21 +48,21 @@ export const products: Product[] = [
       materials: ['Aluminum', 'Basswood', 'PVC'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'venetian-blinds'
+    slug: 'persianas-double-vision'
   },
   {
     id: 3,
-    name: 'Roman Curtains',
-    description: 'Elegant and timeless, our roman curtains add a touch of sophistication to any room. When raised, they fold up neatly, creating a cascading effect that adds texture and visual interest.',
-    shortDescription: 'Elegant fabric curtains with a cascading fold effect',
-    price: '149.99',
-    priceRange: '$149.99 - $349.99',
+    name: 'Persianas De Teto',
+    description: 'A Persiana de Teto é a solução ideal para ambientes com tetos de vidro, claraboias e áreas envidraçadas, proporcionando proteção solar, conforto térmico e controle de luminosidade sem comprometer a estética do espaço.',
+    shortDescription: 'Ideal para tetos de vidro, a Persiana de Teto controla a luz e o calor com elegância e praticidade.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/roman-curtains-1.jpg',
-      '/images/products/roman-curtains-2.jpg',
-      '/images/products/roman-curtains-3.jpg'
+      '/public/persiana_teto.jpg',
+      '/public/persiana_teto_2.webp',
+      '/public/persiana_teto_3.webp'
     ],
-    category: 'curtains',
+    category: 'persianas',
     isFeatured: true,
     isOnSale: false,
     rating: 4.7,
@@ -76,19 +76,19 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: 'Vertical Blinds',
-    description: 'Perfect for large windows and sliding doors, our vertical blinds offer excellent coverage and light control. The vertical slats can be rotated to adjust light levels or drawn completely to one side.',
-    shortDescription: 'Vertical slat blinds ideal for large windows and doors',
-    price: '129.99',
-    priceRange: '$129.99 - $299.99',
+    name: 'Persianas Externas',
+    description: 'A Persiana Externa de Alumínio ou PVC combina resistência, segurança e conforto térmico, sendo ideal para quem busca isolamento eficiente contra calor, frio e ruídos. Seu design robusto e funcional protege janelas e fachadas contra intempéries, aumentando a durabilidade do ambiente e proporcionando maior privacidade.',
+    shortDescription: 'Resistente e funcional, a Persiana Externa de Alumínio e PVC garante isolamento térmico, proteção solar e mais privacidade para seu espaço.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/vertical-blinds-1.jpg',
-      '/images/products/vertical-blinds-2.jpg',
-      '/images/products/vertical-blinds-3.jpg'
+      '/public/persiana_externas.jpg',
+      '/public/persiana_externa_aluminio.jpeg',
+      '/public/persiana_externa_porta.jpg'
     ],
-    category: 'blinds',
+    category: 'persianas',
     isFeatured: false,
-    isOnSale: true,
+    isOnSale: false,
     rating: 4.1,
     reviewCount: 78,
     options: {
@@ -96,21 +96,21 @@ export const products: Product[] = [
       materials: ['PVC', 'Fabric', 'Aluminum'],
       widths: ['100cm', '150cm', '200cm', '250cm', 'Custom']
     },
-    slug: 'vertical-blinds'
+    slug: 'persianas-externas'
   },
   {
     id: 5,
-    name: 'Sheer Curtains',
-    description: 'Our lightweight sheer curtains diffuse sunlight beautifully while maintaining privacy. They create a soft, ethereal atmosphere and can be layered with heavier curtains for a complete window treatment.',
-    shortDescription: 'Lightweight, translucent curtains for soft light diffusion',
-    price: '79.99',
-    priceRange: '$79.99 - $199.99',
+    name: 'Tela de Proteção para Janelas',
+    description: 'A Tela de Proteção para Janelas é a solução ideal para evitar quedas e garantir a segurança de crianças, idosos e pets em apartamentos e sobrados. Feita sob medida, com materiais resistentes e discretos, protege sem comprometer a ventilação e a estética do ambiente.',
+    shortDescription: 'Tela de Proteção para Janelas – Segurança discreta e eficiente para proteger sua família e pets contra quedas.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/sheer-curtains-1.jpg',
-      '/images/products/sheer-curtains-2.jpg',
-      '/images/products/sheer-curtains-3.jpg'
+      '/public/tela_proteção_janela.jpeg',
+      '/public/tela_proteção_janela_2.jpeg',
+      '/public/tela_proteção_janela_3.jpeg'
     ],
-    category: 'curtains',
+    category: 'telas-de-proteção',
     isFeatured: true,
     isOnSale: false,
     rating: 4.6,
@@ -124,19 +124,19 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Blackout Curtains',
-    description: 'Our premium blackout curtains block light, reduce noise, and provide excellent insulation. Perfect for bedrooms, home theaters, or any room where you want complete light control and privacy.',
-    shortDescription: 'Light-blocking, insulating curtains for complete privacy',
-    price: '129.99',
-    priceRange: '$129.99 - $299.99',
+    name: 'Tela de Proteção para Piscinas ',
+    description: 'A Tela de Proteção para Piscinas previne acidentes e garante mais segurança para crianças e animais de estimação. Feita sob medida, é resistente e discreta, proporcionando proteção sem comprometer a estética do ambiente',
+    shortDescription: 'Tela de Proteção para Piscinas – Prevenção de acidentes com design discreto e resistente. ',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/blackout-curtains-1.jpg',
-      '/images/products/blackout-curtains-2.jpg',
-      '/images/products/blackout-curtains-3.jpg'
+      '/public/tela_proteção_piscina_top.jpeg',
+      '/public/tela_proteção_piscinas_2.jpg',
+      '/public/tela_proteção_piscinas.jpg'
     ],
-    category: 'curtains',
+    category: 'telas-de-proteção',
     isFeatured: true,
-    isOnSale: true,
+    isOnSale: false,
     rating: 4.8,
     reviewCount: 187,
     options: {
@@ -144,21 +144,21 @@ export const products: Product[] = [
       materials: ['Polyester', 'Microfiber', 'Thermal Insulated'],
       widths: ['140cm', '180cm', '220cm', '280cm', 'Custom']
     },
-    slug: 'blackout-curtains'
+    slug: 'telas-de-proteção-piscinas'
   },
   {
     id: 7,
-    name: 'Wooden Blinds',
-    description: 'Add warmth and natural beauty to your space with our wooden blinds. Made from premium hardwoods, these blinds offer excellent durability and a timeless aesthetic that complements any decor style.',
-    shortDescription: 'Natural wood slat blinds for a warm, classic look',
-    price: '159.99',
-    priceRange: '$159.99 - $399.99',
+    name: 'Tela de Proteção para Para-peitos',
+    description: 'A Tela de Proteção para Parapeitos é projetada para evitar quedas e proporcionar segurança em sacadas, varandas e mezaninos. Fabricada sob medida, é resistente e mantém a ventilação sem afetar a estética do espaço.',
+    shortDescription: 'Tela de Proteção para Parapeitos – Segurança discreta para varandas e sacadas sem comprometer a estética. ',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/wooden-blinds-1.jpg',
-      '/images/products/wooden-blinds-2.jpg',
-      '/images/products/wooden-blinds-3.jpg'
+      '/public/tela_proteção_escadas.jpeg',
+      '/public/tela_proteção_sacada.jpeg',
+      '/public/tela_proteção_sacada_2.jpeg'
     ],
-    category: 'blinds',
+    category: 'telas-de-proteção',
     isFeatured: false,
     isOnSale: false,
     rating: 4.5,
@@ -168,21 +168,21 @@ export const products: Product[] = [
       materials: ['Basswood', 'Bamboo', 'Cedar'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'wooden-blinds'
+    slug: 'telas-de-proteção-para-peitos'
   },
   {
     id: 8,
-    name: 'Cellular Shades',
-    description: 'Our energy-efficient cellular shades feature a unique honeycomb design that traps air, providing excellent insulation. Available in single, double, or triple cell options for varying levels of insulation.',
-    shortDescription: 'Energy-efficient honeycomb design for insulation',
-    price: '119.99',
-    priceRange: '$119.99 - $279.99',
+    name: 'Mosquiteiras Para Janelas',
+    description: 'A Tela para Mosquito para Janelas permite a ventilação natural sem a entrada de mosquitos e outros insetos. Fabricada sob medida, é resistente, discreta e fácil de instalar, proporcionando conforto e proteção contra os insetos.',
+    shortDescription: 'Tela para Mosquito para Janelas, Permite a circulação do ar, mantendo os insetos do lado de fora.',
+    price: '',
+    priceRange: '',
     images: [
-      '/images/products/cellular-shades-1.jpg',
-      '/images/products/cellular-shades-2.jpg',
-      '/images/products/cellular-shades-3.jpg'
+      '/public/tela_mosquiteiro.jpg',
+      '/public/tela_mosquiteiro_3.jpg',
+      '/public/tela_mosquiteiro_2.webp'
     ],
-    category: 'shades',
+    category: 'mosquiteiras',
     isFeatured: true,
     isOnSale: false,
     rating: 4.7,
@@ -194,6 +194,31 @@ export const products: Product[] = [
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
     slug: 'cellular-shades'
+  },
+  {
+    id: 9,
+    name: 'Mosquiteiras Para Portas',
+    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
+    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
+    price: '',
+    priceRange: '',
+    images: [
+      '/public/tela_mosquiteira_porta.webp',
+      '/public/tela_mosquiteiro_porta_2.jpg',
+      
+    ],
+    category: 'mosquiteiras',
+    isFeatured: true,
+    isOnSale: false,
+    rating: 4.7,
+    reviewCount: 108,
+    options: {
+      colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
+      cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
+      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
+      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
+    },
+    slug: 'tela-mosquito'
   }
 ];
 
@@ -204,21 +229,21 @@ export const categories: Category[] = [
     name: 'Persianas',
     description: 'Conheça nossos modelos Personalizados que elevam o design do seu ambiente.',
     image: '/public/Persiana_Romana.jpg',
-    slug: 'blinds'
+    slug: 'persianas'
   },
   {
     id: 2,
     name: 'Telas de Proteção',
     description: 'Telas totalmente adaptaveis a tua necessidade de proteção!',
     image: '/public/tela-de-protecao-piscina.webp',
-    slug: 'curtains'
+    slug: 'telas-de-proteção'
   },
   {
     id: 3,
     name: 'Mosquiteiras',
     description: 'Traga conforto em sentir aquele ar gostoso entrando sem a companhia dos mosquitos.',
     image: '/public/Tela_mosquito.jpg',
-    slug: 'shades'
+    slug: 'mosquiteiras'
   },
   // {
   //   id: 4,

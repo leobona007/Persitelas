@@ -77,17 +77,16 @@ const Products = () => {
   return (
     <>
       <Helmet>
-        <title>Products | Gardis - Blinds & Curtains</title>
+        <title>Produtos | Persitelas - Persianas e Telas de Proteção</title>
         <meta name="description" content="Browse our collection of high-quality blinds, curtains, and window accessories. Find the perfect window treatments for your home." />
       </Helmet>
       
       <div className="pt-24 pb-16">
         <div className="bg-[#225260] text-white py-12 mb-10">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-serif mb-4">Our Products</h1>
+            <h1 className="text-4xl md:text-5xl font-serif mb-4">Nossos Produtos</h1>
             <p className="text-white/80 max-w-2xl mx-auto">
-              Discover our range of premium blinds, curtains, and accessories, 
-              designed to transform your windows and enhance your home.
+              Veja Os Produtos que a Persitelas tem disponivel para elevar o seu ambiente.
             </p>
           </div>
         </div>
