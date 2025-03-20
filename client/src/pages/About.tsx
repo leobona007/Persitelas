@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import NewsletterSection from '@/components/home/NewsletterSection';
 
@@ -9,6 +10,11 @@ const About = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

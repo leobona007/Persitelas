@@ -26,11 +26,11 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     
-    // Basic form validation
+    // Validação básica do formulário
     if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: 'Error',
-        description: 'Please fill in all required fields.',
+        title: 'Erro',
+        description: 'Por favor, preencha todos os campos obrigatórios.',
         variant: 'destructive',
       });
       return;
@@ -38,11 +38,11 @@ const Contact = () => {
     
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Simulação de envio do formulário
     setTimeout(() => {
       toast({
-        title: 'Message Sent!',
-        description: 'Thank you for contacting us. We will get back to you soon.',
+        title: 'Mensagem Enviada!',
+        description: 'Obrigado por entrar em contato conosco. Retornaremos em breve.',
       });
       
       setFormData({
@@ -60,8 +60,8 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Gardis - Blinds & Curtains</title>
-        <meta name="description" content="Get in touch with Gardis for custom window treatments, inquiries about our products, or to schedule a consultation." />
+        <title>Entre em Contato | Persitelas Persianas e telas de proteção</title>
+        <meta name="description" content="Entre em contato com a Persitelas para persianas sob medida, telas de proteção, ou para agendar uma visita técnica." />
       </Helmet>
       
       <div className="pt-24 pb-16">
@@ -74,10 +74,10 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-serif mb-6">Contact Us</h1>
+              <h1 className="text-4xl md:text-5xl font-serif mb-6">Contate-nos</h1>
               <p className="text-lg">
-                Have questions or need assistance? We're here to help. 
-                Reach out to our team for personalized service.
+                Tem dúvidas ou precisa de assistência? Estamos aqui para ajudar.
+                Entre em contato com nossa equipe para um atendimento personalizado.
               </p>
             </motion.div>
           </div>
@@ -92,56 +92,50 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-2xl font-serif text-[#225260] mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-serif text-[#225260] mb-6">Fale Conosco</h2>
               
               <div className="bg-[#F8F8F8] p-6 rounded-lg mb-8">
                 <div className="mb-6">
-                  <h3 className="font-medium text-lg text-[#225260] mb-2">Visit Our Store</h3>
+                  <h3 className="font-medium text-lg text-[#225260] mb-2">Nossa Loja</h3>
                   <p className="text-gray-600">
-                    123 Main Street<br />
-                    Anytown, ST 12345<br />
-                    United States
+                    Av. Manoel Elias, 2433<br />
+                    Porto Alegre, RS 91240-260<br />
+                    Brasil
                   </p>
                 </div>
                 
                 <div className="mb-6">
-                  <h3 className="font-medium text-lg text-[#225260] mb-2">Contact Information</h3>
+                  <h3 className="font-medium text-lg text-[#225260] mb-2">Informações de Contato</h3>
                   <p className="text-gray-600 mb-2">
                     <i className="fas fa-phone-alt mr-2 text-[#5B412A]"></i>
                     (51) 99223-3031
                   </p>
                   <p className="text-gray-600 mb-2">
                     <i className="fas fa-envelope mr-2 text-[#5B412A]"></i>
-                    info@gardis.com
+                    contato@persitelas.com.br
                   </p>
                   <p className="text-gray-600">
                     <i className="fas fa-globe mr-2 text-[#5B412A]"></i>
-                    www.gardis.com
+                    www.persitelas.com.br
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-[#225260] mb-2">Business Hours</h3>
-                  <p className="text-gray-600 mb-1">Monday - Friday: 9AM - 6PM</p>
-                  <p className="text-gray-600 mb-1">Saturday: 10AM - 4PM</p>
-                  <p className="text-gray-600">Sunday: Closed</p>
+                  <h3 className="font-medium text-lg text-[#225260] mb-2">Horário de Funcionamento</h3>
+                  <p className="text-gray-600 mb-1">Segunda - Sexta: 8h às 18h</p>
+                  <p className="text-gray-600 mb-1">Sábado: 8h às 12h</p>
+                  <p className="text-gray-600">Domingo: Fechado</p>
                 </div>
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-[#225260] mb-4">Follow Us</h3>
+                <h3 className="font-medium text-lg text-[#225260] mb-4">Siga-nos</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
+                  <a href="https://www.facebook.com/persitelas" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
+                  <a href="https://www.instagram.com/persitelas" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-[#225260] text-white flex items-center justify-center hover:bg-[#5B412A] transition">
-                    <i className="fab fa-pinterest-p"></i>
                   </a>
                 </div>
               </div>
@@ -154,12 +148,12 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h2 className="text-2xl font-serif text-[#225260] mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-serif text-[#225260] mb-6">Envie-nos uma Mensagem</h2>
               
               <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="name" className="block text-gray-700 mb-2">Your Name *</label>
+                    <label htmlFor="name" className="block text-gray-700 mb-2">Seu Nome *</label>
                     <input 
                       type="text"
                       id="name"
@@ -172,7 +166,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-gray-700 mb-2">Your Email *</label>
+                    <label htmlFor="email" className="block text-gray-700 mb-2">Seu Email *</label>
                     <input 
                       type="email"
                       id="email"
@@ -187,7 +181,7 @@ const Contact = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="phone" className="block text-gray-700 mb-2">Phone Number</label>
+                    <label htmlFor="phone" className="block text-gray-700 mb-2">Telefone</label>
                     <input 
                       type="tel"
                       id="phone"
@@ -199,7 +193,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
+                    <label htmlFor="subject" className="block text-gray-700 mb-2">Assunto</label>
                     <select
                       id="subject"
                       name="subject"
@@ -207,18 +201,18 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#225260]"
                     >
-                      <option value="">Select a subject</option>
-                      <option value="Product Inquiry">Product Inquiry</option>
-                      <option value="Custom Order">Custom Order</option>
-                      <option value="Installation">Installation</option>
-                      <option value="Return">Return</option>
-                      <option value="Other">Other</option>
+                      <option value="">Selecione um assunto</option>
+                      <option value="Product Inquiry">Informações sobre Produtos</option>
+                      <option value="Custom Order">Orçamento Personalizado</option>
+                      <option value="Installation">Instalação</option>
+                      <option value="Return">Devolução</option>
+                      <option value="Other">Outro</option>
                     </select>
                   </div>
                 </div>
                 
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-gray-700 mb-2">Your Message *</label>
+                  <label htmlFor="message" className="block text-gray-700 mb-2">Sua Mensagem *</label>
                   <textarea
                     id="message"
                     name="message"
@@ -241,9 +235,9 @@ const Contact = () => {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      Sending...
+                      Enviando...
                     </span>
-                  ) : 'Send Message'}
+                  ) : 'Enviar Mensagem'}
                 </button>
               </form>
             </motion.div>
@@ -253,18 +247,18 @@ const Contact = () => {
         {/* Google Map */}
         <div className="mb-16">
           <div className="container mx-auto px-4 mb-8">
-            <h2 className="text-2xl font-serif text-[#225260]">Find Us</h2>
+            <h2 className="text-2xl font-serif text-[#225260]">Encontre-nos</h2>
           </div>
           <div className="w-full h-[400px] bg-gray-200">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30594994064!2d-74.25987584096475!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1678286581798!5m2!1sen!2sca" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.2576646064!2d-51.1657813!3d-30.0207369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x378a1a6755f5ade5!2sPersitelas!5e0!3m2!1spt-BR!2sbr!4v1678286581798!5m2!1spt-BR!2sbr" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="Gardis Location Map"
+              title="Localização da Persitelas"
             ></iframe>
           </div>
         </div>

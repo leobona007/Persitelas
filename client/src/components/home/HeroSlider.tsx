@@ -19,7 +19,7 @@ const slides: Slide[] = [
     subtitle: 'Eleve sua casa com nossas persianas premium, criadas para beleza duradoura e funcionalidade superior.',
     cta: {
       text: 'Ver Persianas',
-      link: '/products?category=blinds'
+      link: '/products?category=persianas'
     }
   },
   {
@@ -28,7 +28,7 @@ const slides: Slide[] = [
     subtitle: 'Descubra nossa Redes de Proteção personalizadas, projetadas artesanalmente para proporcionar segurança para sua familia',
     cta: {
       text: 'Ver telas de proteção',
-      link: '/products?category=curtains'
+      link: '/products?category=telas-de-proteção'
     }
   }
 ];
@@ -67,7 +67,7 @@ const HeroSlider = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2.5 }}
+            transition={{ duration: 0.5}}
             className="absolute inset-0"
           >
             <div className="relative h-full w-full">
