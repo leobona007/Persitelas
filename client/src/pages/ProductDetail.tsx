@@ -16,6 +16,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState<Product | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   // Scroll to top when component mounts
   useEffect(() => {
@@ -53,6 +54,25 @@ const ProductDetail = () => {
       ...prev,
       [optionType]: value,
     }));
+  };
+  
+  // Image navigation handlers
+  const goToNextImage = () => {
+    if (!product) return;
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === product.images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  
+  const goToPrevImage = () => {
+    if (!product) return;
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === 0 ? product.images.length - 1 : prevIndex - 1
+    );
+  };
+  
+  const goToImage = (index: number) => {
+    setCurrentImageIndex(index);
   };
   
   // Render stars based on rating
@@ -125,15 +145,58 @@ const ProductDetail = () => {
           </div>
           
           <div className="flex flex-col md:flex-row gap-10">
-            {/* Product Image */}
+            {/* Product Image with Navigation */}
             <div className="w-full md:w-1/2">
-              <BlindsAnimation className="rounded-md overflow-hidden">
-                <img 
-                  src={product.images[0]} 
-                  alt={product.name} 
-                  className="w-full h-auto"
-                />
-              </BlindsAnimation>
+              <div className="relative">
+                <BlindsAnimation className="rounded-md overflow-hidden">
+                  <img 
+                    src={product.images[currentImageIndex]} 
+                    alt={`${product.name} - Image ${currentImageIndex + 1}`} 
+                    className="w-full h-auto"
+                  />
+                </BlindsAnimation>
+                
+                {/* Navigation Arrows */}
+                {product.images.length > 1 && (
+                  <>
+                    <button 
+                      onClick={goToPrevImage}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 text-[#225260] hover:bg-white transition z-10"
+                      aria-label="Previous image"
+                    >
+                      <i className="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <button 
+                      onClick={goToNextImage}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 text-[#225260] hover:bg-white transition z-10"
+                      aria-label="Next image"
+                    >
+                      <i className="fas fa-chevron-right"></i>
+                    </button>
+                  </>
+                )}
+              </div>
+              
+              {/* Thumbnails */}
+              {product.images.length > 1 && (
+                <div className="mt-4 flex gap-2 overflow-x-auto pb-2">
+                  {product.images.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToImage(index)}
+                      className={`flex-shrink-0 w-16 h-16 border-2 rounded overflow-hidden ${currentImageIndex === index ? 'border-[#225260]' : 'border-transparent'}`}
+                      aria-label={`View image ${index + 1}`}
+                    >
+                      <img 
+                        src={image} 
+                        alt={`${product.name} thumbnail ${index + 1}`} 
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
             
             {/* Product Details */}

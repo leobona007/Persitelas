@@ -29,9 +29,10 @@ const About = () => {
             >
               <h1 className="text-4xl md:text-5xl font-serif mb-6">Sobre Nós</h1>
               <p className="text-lg">
-                Gardis has been a trusted name in window treatments since 1978. 
-                Our family-run business takes pride in providing high-quality blinds, 
-                curtains, and accessories to make your house feel like home.
+              Na Persitelas, acreditamos que segurança e conforto devem andar juntos. 
+              Com mais de 10 anos de experiência, nos tornamos referência na fabricação e instalação de persianas, 
+              telas mosquiteiras e redes de proteção personalizadas, 
+              garantindo tranquilidade e bem-estar para lares e empresas em Porto Alegre e região.
               </p>
             </motion.div>
           </div>
@@ -61,22 +62,16 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-3xl font-serif text-[#225260] mb-4">Our Story</h2>
+              <h2 className="text-3xl font-serif text-[#225260] mb-4">Compromisso com a Qualidade e Inovação</h2>
               <p className="text-gray-600 mb-4">
-                Founded in 1978 by Michael and Sarah Gardis, our company began as a small workshop 
-                creating custom curtains for local homeowners. With a passion for quality craftsmanship 
-                and personalized service, the business quickly grew to become a trusted name in the industry.
+              Nossa missão vai além de oferecer produtos – buscamos proporcionar a 
+              melhor experiência para nossos clientes, desde o primeiro contato até a instalação. 
+              Trabalhamos com materiais de alta resistência, tecnologias modernas e um atendimento próximo e personalizado, 
+              garantindo que cada solução seja adaptada às necessidades do cliente.
+Com a Persitelas, você tem a certeza de um serviço feito com dedicação, profissionalismo e excelência, 
+assegurando um ambiente mais protegido, confortável e harmonioso para você e sua família.
               </p>
-              <p className="text-gray-600 mb-4">
-                Today, the second generation of the Gardis family continues this legacy, 
-                combining traditional values with modern design and technology to offer the 
-                best window treatment solutions for our customers.
-              </p>
-              <p className="text-gray-600">
-                We believe that every window tells a story, and we're here to help you tell yours 
-                with products that reflect your unique style and meet your practical needs.
-              </p>
-            </motion.div>
+         </motion.div>
           </div>
         </div>
         
@@ -90,7 +85,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Our Values
+              Nossos Valores
             </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -149,7 +144,7 @@ const About = () => {
         </div>
         
         {/* Our Team */}
-        <div className="container mx-auto px-4 mb-16">
+        {/* <div className="container mx-auto px-4 mb-16">
           <motion.h2 
             className="text-3xl font-serif text-[#225260] text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
@@ -241,7 +236,7 @@ const About = () => {
               </div>
             </motion.div>
           </div>
-        </div>
+        </div> */}
         
         {/* CTA */}
         <div className="bg-[#5B412A] text-white py-16 mb-16">
@@ -253,7 +248,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Ready to Transform Your Windows?
+              Pronto para Transformar seu Ambiente?
             </motion.h2>
             <motion.p 
               className="mb-8 max-w-2xl mx-auto"
