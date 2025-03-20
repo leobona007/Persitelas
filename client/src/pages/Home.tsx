@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 import HeroSlider from '@/components/home/HeroSlider';
 import CategorySection from '@/components/home/CategorySection';
 import AboutSection from '@/components/home/AboutSection';
@@ -9,6 +10,11 @@ import NewsletterSection from '@/components/home/NewsletterSection';
 import GallerySection from '@/components/home/GallerySection';
 
 const Home = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
