@@ -59,8 +59,8 @@ const HeroSlider = () => {
   };
   
   return (
-    <section className="pt-24 relative">
-      <div className="relative overflow-hidden h-[500px] md:h-[600px]">
+    <section className="pt-0 relative">
+      <div className="relative overflow-hidden h-[600px] md:h-[700px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
