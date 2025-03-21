@@ -69,7 +69,7 @@ const Contact = () => {
         <meta name="description" content="Entre em contato com a Persitelas para persianas sob medida, telas de proteção, ou para agendar uma visita técnica." />
       </Helmet>
       
-      <div className="pt-24 pb-16">
+      <div className="pt-16 pb-16">
         {/* Hero Section */}
         <div className="bg-[#225260] text-white py-16 mb-16">
           <div className="container mx-auto px-4">

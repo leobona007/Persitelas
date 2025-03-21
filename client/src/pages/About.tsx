@@ -23,7 +23,7 @@ const About = () => {
         <meta name="description" content="Learn about Gardis, a family-run business specializing in high-quality blinds and curtains since 1978." />
       </Helmet>
       
-      <div className="pt-24 pb-16">
+      <div className="pt-16 pb-16">
         {/* Hero Section */}
         <div className="bg-[#225260] text-white py-16 mb-16">
           <div className="container mx-auto px-4">

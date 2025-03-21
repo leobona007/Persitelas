@@ -13,6 +13,11 @@ const Products = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
   
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   // Parse the query params from URL
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -81,7 +86,7 @@ const Products = () => {
         <meta name="description" content="Browse our collection of high-quality blinds, curtains, and window accessories. Find the perfect window treatments for your home." />
       </Helmet>
       
-      <div className="pt-24 pb-16">
+      <div className="pt-16 pb-16">
         <div className="bg-[#225260] text-white py-12 mb-10">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-serif mb-4">Nossos Produtos</h1>
