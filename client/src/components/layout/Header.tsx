@@ -86,7 +86,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden bg-white shadow-md ${isMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden bg-white shadow-md absolute w-full top-full left-0 ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-4">
           <Link href="/" className={`py-2 border-b border-gray-100 ${location === '/' ? 'text-[#225260]' : 'text-gray-600 hover:text-[#225260]'} font-medium`}>
             Início
@@ -110,7 +110,7 @@ const Header = () => {
 export const WhatsAppButton = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send/?phone=5551992233031&text=Ol%C3%A1%21+Vim+atrav%C3%A9s+do+seu+Site.+E+Gostaria+de+informa%C3%A7%C3%B5es+sobre+seus+serviços.&type=phone_number&app_absent=0"
+      href="https://api.whatsapp.com/send/?phone=5551992233031&text=Ol%C3%A1%21+Vim+atrav%C3%A9s+do+seu+Site.+E+Gostaria+de+informa%C3%A7%C3%B5es+sobre+seus+servi%C3%A7os.&type=phone_number&app_absent=0"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20BA5C] hover:scale-110 transition-all duration-300"
