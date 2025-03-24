@@ -17,29 +17,30 @@ const fetchInstagramPhotos = async (limit: number = 6): Promise<GalleryItem[]> =
   const mockInstagramPosts: GalleryItem[] = [
     {
       id: '1',
-      image: '/public/persiana_interna_sob_medida.jpeg'
+      image: '/persiana_interna_sob_medida.jpeg'
     },
     {
       id: '2',
-      image: 'public/rede_de_proteção_sacada.jpeg'
+      image: '/rede_de_proteção_sacada.jpeg'
     },
     {
       id: '3',
-      image: 'public/persianas_double_vision.jpeg'
+      image: '/persianas_double_vision.jpeg'
     },
     {
       id: '4',
-      image: 'public/rede_proteção_externa.jpeg'
+      image: '/rede_proteção_externa.jpeg'
     },
     {
       id: '5',
-      image: 'public/rede_proteção_piscina.jpeg'
+      image: '/rede_proteção_piscina.jpeg'
     },
     {
       id: '6',
-      image: 'public/persiana_double_visionn.jpeg'
+      image: '/persiana_double_visionn.jpeg'
     },
   ];
+  
 
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 800));
