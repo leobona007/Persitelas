@@ -11,7 +11,7 @@ export const products: Product[] = [
     priceRange: '',
     images: [
       '/persiana_romana_sala.jpg',
-      '/persiana_romana_sala_2.jpg',
+      '/persiana_romana_4.webp',
       '/persiana_romana_blackout.jpg'
     ],
     category: 'persianas',
@@ -59,15 +59,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-<<<<<<< HEAD
       '/persiana_double_vision_sala.png',
       '/persiana_double_vision_sala_2.jpg',
-      '/persiana_double_vision_sala_3.webp'
-=======
-      '/public/persiana_double_vision_sala.png',
-      '/public/persiana_double_vision_sala_2.jpg',
-      '/public/persiana_double_vision_3.webp'
->>>>>>> 314d358d8360d6f5cb032c2bda53556f9c1e2b1d
+      '/persiana_double_vision_3.webp'
     ],
     category: 'persianas',
     isFeatured: true,
