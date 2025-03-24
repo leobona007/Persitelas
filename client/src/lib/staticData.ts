@@ -29,14 +29,14 @@ export const products: Product[] = [
   {
     id: 2,
     name: 'Persianas Motorizadas',
-    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
-    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
+    description: 'Experimente o futuro da automação residencial com as Persianas Motorizadas da Persitelas. Desenvolvidas para oferecer praticidade, segurança e elegância, nossas persianas permitem o controle automático de luminosidade e privacidade com o simples toque de um botão. Com design moderno e tecnologia avançada, elas se adaptam perfeitamente a ambientes residenciais e corporativos, proporcionando conforto e economia de energia.',
+    shortDescription: 'Persianas Motorizadas – Controle automático de luz e privacidade com design moderno e eficiência para transformar seu ambiente. ',
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_mosquiteira_porta.webp',
-      '/public/tela_mosquiteiro_porta_2.jpg',
-      
+      '/public/persianas_motorizada_2.png',
+      '/public/persiana_motorizada.jpeg',
+      '/public/persiana_motorizada_3.jpg',
     ],
     category: 'persianas',
     isFeatured: true,
@@ -107,8 +107,8 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persiana_externas.jpg',
-      '/public/persiana_externa_aluminio.jpeg',
+      '/public/persiana_externa_porta_2.jpg',
+      '/public/persiana_externa_4.jpg',
       '/public/persiana_externa_porta.jpg'
     ],
     category: 'persianas',
