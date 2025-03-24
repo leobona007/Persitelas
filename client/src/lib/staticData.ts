@@ -61,7 +61,7 @@ export const products: Product[] = [
     images: [
       '/persiana_double_vision_sala.webp',
       '/persiana_double_vision_sala_2.jpg',
-      '/persiana_double_vision_3.webp'
+      '/persiana_double_vision_sala_3.webp'
     ],
     category: 'persianas',
     isFeatured: true,
