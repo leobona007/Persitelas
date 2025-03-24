@@ -19,8 +19,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Gardis - Blinds & Curtains</title>
-        <meta name="description" content="Learn about Gardis, a family-run business specializing in high-quality blinds and curtains since 1978." />
+        <title>About Us | Persitelas- Persianas e Telas Personalizadas</title>
+        <meta name="description" content="Persitelas - Há mais de 10 anos trazendo excelencia em Persianas e Telas Personalizadas" />
       </Helmet>
       
       <div className="pt-16 pb-16">
@@ -56,7 +56,7 @@ const About = () => {
             >
               <img 
                 src="/sala_com_persiana.jpeg"
-                alt="Family business team at Gardis" 
+                alt="Persitelas- Persianas e Telas Personalizadas" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </motion.div>

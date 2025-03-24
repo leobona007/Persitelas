@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Gardis - Blinds & Curtains</title>
+        <title>Persitelas- Persianas e Telas Personalizadas</title>
         <meta name="description" content="Quality blinds and curtains from a local family-run business. We stock hundreds of quality fabrics and accessories for blinds and curtains in a huge range of styles, colors and patterns." />
       </Helmet>
       
