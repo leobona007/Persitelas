@@ -108,8 +108,8 @@ export const products: Product[] = [
     priceRange: '',
     images: [
       '/persiana_externa_porta_2.jpg',
-      '/persiana_externa_4.jpg',
-      '/persiana_externa_porta.jpg'
+      '/persiana_externa_5.webp',
+      '/persiana_externa_porta.webp'
     ],
     category: 'persianas',
     isFeatured: false,
@@ -131,8 +131,8 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-            '/tela_proteção_janela_2.jpeg',
-      '/tela_proteção_janela_3.jpeg'
+            '/tela_proteção_janela_2.webp',
+      '/tela_proteção_janela_3.webp'
     ],
     category: 'telas-de-proteção',
     isFeatured: true,
@@ -154,7 +154,7 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/tela_proteção_piscina_top.jpeg',
+      '/tela_proteção_piscina_top.png',
       '/tela_proteção_piscinas_2.jpg',
       '/tela_proteção_piscinas.jpg'
     ],
@@ -178,9 +178,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/tela_proteção_escadas.webp',
-      '/tela_proteção_sacada.jpeg',
-      '/tela_proteção_sacada_2.jpeg'
+      '/tela_proteção_escadas.png',
+      '/tela_proteção_escadas_2.png',
+      '/tela_proteção_sacada_2.png'
     ],
     category: 'telas-de-proteção',
     isFeatured: false,
@@ -202,9 +202,8 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/tela_mosquiteiro.jpg',
       '/tela_mosquiteiro_3.jpg',
-      '/tela_mosquiteiro_2.webp'
+      '/tela_mosquiteiro_2.png'
     ],
     category: 'mosquiteiras',
     isFeatured: true,
@@ -218,31 +217,31 @@ export const products: Product[] = [
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
     slug: 'cellular-shades'
-  },
-  {
-    id: 10,
-    name: 'Mosquiteiras Para Portas',
-    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
-    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
-    price: '',
-    priceRange: '',
-    images: [
-      '/tela_mosquiteira_porta.webp',
-      '/tela_mosquiteiro_porta_2.jpg',
+  // },
+  // {
+  //   id: 10,
+  //   name: 'Mosquiteiras Para Portas',
+  //   description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
+  //   shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
+  //   price: '',
+  //   priceRange: '',
+  //   images: [
+  //     '/tela_mosquiteira_porta.webp',
+  //     '/tela_mosquiteiro_porta_2.jpeg',
       
-    ],
-    category: 'mosquiteiras',
-    isFeatured: true,
-    isOnSale: false,
-    rating: 4.7,
-    reviewCount: 108,
-    options: {
-      colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
-      cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
-      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
-      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
-    },
-    slug: 'tela-mosquito'
+  //   ],
+  //   category: 'mosquiteiras',
+  //   isFeatured: true,
+  //   isOnSale: false,
+  //   rating: 4.7,
+  //   reviewCount: 108,
+  //   options: {
+  //     colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
+  //     cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
+  //     opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
+  //     widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
+  //   },
+  //   slug: 'tela-mosquito'
   }
 ];
 
