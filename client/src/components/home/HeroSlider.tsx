@@ -23,7 +23,7 @@ const slides: Slide[] = [
     }
   },
   {
-    image: '/public/tela_de_protecao.jpg',
+    image: '/tela_de_protecao.jpg',
     title: 'Proteção Extra para quem Você Ama',
     subtitle: 'Descubra nossa Redes de Proteção personalizadas, projetadas artesanalmente para proporcionar segurança para sua familia',
     cta: {

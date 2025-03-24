@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
           <Link href="/" className="flex items-center">
             <img 
-              src="/public/persianas_portoalegre.svg" 
+              src="/persianas_portoalegre.svg" 
               alt="Persianas Porto Alegre" 
               className="h-12"
             />

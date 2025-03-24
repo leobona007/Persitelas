@@ -10,9 +10,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persiana_romana_sala.jpg',
-      '/public/persiana_romana_sala_2.jpg',
-      '/public/persiana_romana_blackout.jpg'
+      '/persiana_romana_sala.jpg',
+      '/persiana_romana_sala_2.jpg',
+      '/persiana_romana_blackout.jpg'
     ],
     category: 'persianas',
     isFeatured: true,
@@ -34,9 +34,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persianas_motorizada_2.png',
-      '/public/persiana_motorizada.jpeg',
-      '/public/persiana_motorizada_3.jpg',
+      '/persianas_motorizada_2.png',
+      '/persiana_motorizada.jpeg',
+      '/persiana_motorizada_3.jpg',
     ],
     category: 'persianas',
     isFeatured: true,
@@ -59,9 +59,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persiana_double_vision_sala.png',
-      '/public/persiana_double_vision_sala_2.jpg',
-      '/public/persiana_double_vision_sala_3.webp'
+      '/persiana_double_vision_sala.png',
+      '/persiana_double_vision_sala_2.jpg',
+      '/persiana_double_vision_sala_3.webp'
     ],
     category: 'persianas',
     isFeatured: true,
@@ -83,9 +83,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persiana_teto.jpg',
-      '/public/persiana_teto_2.webp',
-      '/public/persiana_teto_3.webp'
+      '/persiana_teto.jpg',
+      '/persiana_teto_2.webp',
+      '/persiana_teto_3.webp'
     ],
     category: 'persianas',
     isFeatured: true,
@@ -107,9 +107,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/persiana_externa_porta_2.jpg',
-      '/public/persiana_externa_4.jpg',
-      '/public/persiana_externa_porta.jpg'
+      '/persiana_externa_porta_2.jpg',
+      '/persiana_externa_4.jpg',
+      '/persiana_externa_porta.jpg'
     ],
     category: 'persianas',
     isFeatured: false,
@@ -131,8 +131,8 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-            '/public/tela_proteção_janela_2.jpeg',
-      '/public/tela_proteção_janela_3.jpeg'
+            '/tela_proteção_janela_2.jpeg',
+      '/tela_proteção_janela_3.jpeg'
     ],
     category: 'telas-de-proteção',
     isFeatured: true,
@@ -154,9 +154,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_proteção_piscina_top.jpeg',
-      '/public/tela_proteção_piscinas_2.jpg',
-      '/public/tela_proteção_piscinas.jpg'
+      '/tela_proteção_piscina_top.jpeg',
+      '/tela_proteção_piscinas_2.jpg',
+      '/tela_proteção_piscinas.jpg'
     ],
     category: 'telas-de-proteção',
     isFeatured: true,
@@ -178,9 +178,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_proteção_escadas.webp',
-      '/public/tela_proteção_sacada.jpeg',
-      '/public/tela_proteção_sacada_2.jpeg'
+      '/tela_proteção_escadas.webp',
+      '/tela_proteção_sacada.jpeg',
+      '/tela_proteção_sacada_2.jpeg'
     ],
     category: 'telas-de-proteção',
     isFeatured: false,
@@ -202,9 +202,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_mosquiteiro.jpg',
-      '/public/tela_mosquiteiro_3.jpg',
-      '/public/tela_mosquiteiro_2.webp'
+      '/tela_mosquiteiro.jpg',
+      '/tela_mosquiteiro_3.jpg',
+      '/tela_mosquiteiro_2.webp'
     ],
     category: 'mosquiteiras',
     isFeatured: true,
@@ -227,8 +227,8 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/public/tela_mosquiteira_porta.webp',
-      '/public/tela_mosquiteiro_porta_2.jpg',
+      '/tela_mosquiteira_porta.webp',
+      '/tela_mosquiteiro_porta_2.jpg',
       
     ],
     category: 'mosquiteiras',
@@ -252,21 +252,21 @@ export const categories: Category[] = [
     id: 1,
     name: 'Persianas',
     description: 'Conheça nossos modelos Personalizados que elevam o design do seu ambiente.',
-    image: '/public/Persiana_Romana.jpg',
+    image: '/Persiana_Romana.jpg',
     slug: 'persianas'
   },
   {
     id: 2,
     name: 'Telas de Proteção',
     description: 'Telas totalmente adaptaveis a tua necessidade de proteção!',
-    image: '/public/tela-de-protecao-piscina.webp',
+    image: '/tela-de-protecao-piscina.webp',
     slug: 'telas-de-proteção'
   },
   {
     id: 3,
     name: 'Mosquiteiras',
     description: 'Traga conforto em sentir aquele ar gostoso entrando sem a companhia dos mosquitos.',
-    image: '/public/Tela_mosquito.jpg',
+    image: '/Tela_mosquito.jpg',
     slug: 'mosquiteiras'
   },
   // {

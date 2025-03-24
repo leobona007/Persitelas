@@ -30,7 +30,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img 
-              src="/public/persianas_portoalegre.svg" 
+              src="/persianas_portoalegre.svg" 
               alt="Persianas Porto Alegre" 
               className="h-12"
             />
