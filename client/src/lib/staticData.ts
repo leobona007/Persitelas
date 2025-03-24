@@ -11,7 +11,7 @@ export const products: Product[] = [
     priceRange: '',
     images: [
       '/persiana_romana_sala.jpg',
-      '/persiana_romana_sala_2.jpg',
+      '/persiana_romana_4.webp',
       '/persiana_romana_blackout.jpg'
     ],
     category: 'persianas',
