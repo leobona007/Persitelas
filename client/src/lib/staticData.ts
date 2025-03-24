@@ -28,6 +28,31 @@ export const products: Product[] = [
   },
   {
     id: 2,
+    name: 'Persianas Motorizadas',
+    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
+    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
+    price: '',
+    priceRange: '',
+    images: [
+      '/public/tela_mosquiteira_porta.webp',
+      '/public/tela_mosquiteiro_porta_2.jpg',
+      
+    ],
+    category: 'persianas',
+    isFeatured: true,
+    isOnSale: false,
+    rating: 4.7,
+    reviewCount: 108,
+    options: {
+      colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
+      cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
+      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
+      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
+    },
+    slug: 'persianas-motorizadas'
+  },
+  {
+    id: 3,
     name: 'Persianas Double-Vision',
     description: 'A Persiana Double Vision combina modernidade e funcionalidade, permitindo o ajuste perfeito entre luminosidade e privacidade. Seu design inovador conta com faixas translúcidas e opacas que se alternam, possibilitando diferentes níveis de iluminação sem abrir mão da elegância.',
     shortDescription: 'Com faixas ajustáveis, a Persiana Double Vision permite regular a luz e a privacidade com elegância e praticidade.',
@@ -51,7 +76,7 @@ export const products: Product[] = [
     slug: 'persianas-double-vision'
   },
   {
-    id: 3,
+    id: 4,
     name: 'Persianas De Teto',
     description: 'A Persiana de Teto é a solução ideal para ambientes com tetos de vidro, claraboias e áreas envidraçadas, proporcionando proteção solar, conforto térmico e controle de luminosidade sem comprometer a estética do espaço.',
     shortDescription: 'Ideal para tetos de vidro, a Persiana de Teto controla a luz e o calor com elegância e praticidade.',
@@ -75,7 +100,7 @@ export const products: Product[] = [
     slug: 'roman-curtains'
   },
   {
-    id: 4,
+    id: 5,
     name: 'Persianas Externas',
     description: 'A Persiana Externa de Alumínio ou PVC combina resistência, segurança e conforto térmico, sendo ideal para quem busca isolamento eficiente contra calor, frio e ruídos. Seu design robusto e funcional protege janelas e fachadas contra intempéries, aumentando a durabilidade do ambiente e proporcionando maior privacidade.',
     shortDescription: 'Resistente e funcional, a Persiana Externa de Alumínio e PVC garante isolamento térmico, proteção solar e mais privacidade para seu espaço.',
@@ -99,7 +124,7 @@ export const products: Product[] = [
     slug: 'persianas-externas'
   },
   {
-    id: 5,
+    id: 6,
     name: 'Tela de Proteção para Janelas',
     description: 'A Tela de Proteção para Janelas é a solução ideal para evitar quedas e garantir a segurança de crianças, idosos e pets em apartamentos e sobrados. Feita sob medida, com materiais resistentes e discretos, protege sem comprometer a ventilação e a estética do ambiente.',
     shortDescription: 'Tela de Proteção para Janelas – Segurança discreta e eficiente para proteger sua família e pets contra quedas.',
@@ -122,7 +147,7 @@ export const products: Product[] = [
     slug: 'sheer-curtains'
   },
   {
-    id: 6,
+    id: 7,
     name: 'Tela de Proteção para Piscinas ',
     description: 'A Tela de Proteção para Piscinas previne acidentes e garante mais segurança para crianças e animais de estimação. Feita sob medida, é resistente e discreta, proporcionando proteção sem comprometer a estética do ambiente',
     shortDescription: 'Tela de Proteção para Piscinas – Prevenção de acidentes com design discreto e resistente. ',
@@ -146,7 +171,7 @@ export const products: Product[] = [
     slug: 'telas-de-proteção-piscinas'
   },
   {
-    id: 7,
+    id: 8,
     name: 'Tela de Proteção para Para-peitos',
     description: 'A Tela de Proteção para Parapeitos é projetada para evitar quedas e proporcionar segurança em sacadas, varandas e mezaninos. Fabricada sob medida, é resistente e mantém a ventilação sem afetar a estética do espaço.',
     shortDescription: 'Tela de Proteção para Parapeitos – Segurança discreta para varandas e sacadas sem comprometer a estética. ',
@@ -170,7 +195,7 @@ export const products: Product[] = [
     slug: 'telas-de-proteção-para-peitos'
   },
   {
-    id: 8,
+    id: 9,
     name: 'Mosquiteiras Para Janelas',
     description: 'A Tela para Mosquito para Janelas permite a ventilação natural sem a entrada de mosquitos e outros insetos. Fabricada sob medida, é resistente, discreta e fácil de instalar, proporcionando conforto e proteção contra os insetos.',
     shortDescription: 'Tela para Mosquito para Janelas, Permite a circulação do ar, mantendo os insetos do lado de fora.',
@@ -195,7 +220,7 @@ export const products: Product[] = [
     slug: 'cellular-shades'
   },
   {
-    id: 9,
+    id: 10,
     name: 'Mosquiteiras Para Portas',
     description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
     shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
@@ -218,31 +243,6 @@ export const products: Product[] = [
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
     slug: 'tela-mosquito'
-  },
-  {
-    id: 10,
-    name: 'Persianas Motorizadas',
-    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
-    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
-    price: '',
-    priceRange: '',
-    images: [
-      '/public/tela_mosquiteira_porta.webp',
-      '/public/tela_mosquiteiro_porta_2.jpg',
-      
-    ],
-    category: 'persianas',
-    isFeatured: true,
-    isOnSale: false,
-    rating: 4.7,
-    reviewCount: 108,
-    options: {
-      colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
-      cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
-      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
-      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
-    },
-    slug: 'persianas-motorizadas'
   }
 ];
 
