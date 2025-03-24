@@ -55,7 +55,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <img 
-                src="https://images.pexels.com/photos/7058755/pexels-photo-7058755.jpeg"
+                src="/sala_com_persiana.jpeg"
                 alt="Family business team at Gardis" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />

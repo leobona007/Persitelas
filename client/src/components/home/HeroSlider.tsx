@@ -14,7 +14,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: 'https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg',
+    image: '/escritorio_com_persianas.jpeg',
     title: 'Design Inspirado Para Espaços do Dia a Dia',
     subtitle: 'Eleve sua casa com nossas persianas premium, criadas para beleza duradoura e funcionalidade superior.',
     cta: {

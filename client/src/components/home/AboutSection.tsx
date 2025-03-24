@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-12">
             <img 
-              src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+              src="/sala_com_persianas.png"
               alt="Elegant interior with premium curtains" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -72,7 +72,7 @@ const AboutSection = () => {
             
             <Link href="/about">
               <a className="bg-[#225260] hover:bg-[#225260]/90 text-white font-medium px-8 py-3 inline-block mt-8 transition">
-                Saiba mais sobre nós!
+                Faça seu orçamento!
               </a>
             </Link>
           </div>

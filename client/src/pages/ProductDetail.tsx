@@ -49,6 +49,16 @@ const ProductDetail = () => {
     });
   };
   
+  const handleWhatsAppQuote = () => {
+    if (!product) return;
+    
+    const message = `Olá! Vi em seu Site sobre ${product.name}! E gostaria de solicitar um orçamento para o produto! `;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
+  
   const handleOptionChange = (optionType: string, value: string) => {
     setSelectedOptions(prev => ({
       ...prev,
@@ -261,15 +271,16 @@ const ProductDetail = () => {
                 </div>
               </div> */}
               
-              {/* Add to Cart
+             
               <motion.button
-                className="w-full bg-[#225260] text-white px-6 py-3 rounded-md hover:bg-[#225260]/90 transition mb-4"
-                onClick={handleAddToCart}
+                className="w-full bg-[#225260] text-white px-6 py-3 rounded-md hover:bg-[#225260]/90 transition mb-4 flex items-center justify-center"
+                onClick={handleWhatsAppQuote}
                 whileTap={{ scale: 0.95 }}
               >
-                Add to Cart
+                <i className="fab fa-whatsapp mr-2 text-lg"></i>
+                Faça seu orçamento
               </motion.button>
-               */}
+              
               {/* Wishlist
               <button className="w-full border border-[#5B412A] text-[#5B412A] px-6 py-3 rounded-md hover:bg-[#5B412A] hover:text-white transition flex items-center justify-center">
                 <i className="far fa-heart mr-2"></i>
