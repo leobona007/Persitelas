@@ -85,7 +85,7 @@ const HeroSlider = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
                   >
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
                       {slides[currentSlide].title}
                     </h2>
                     <p className="text-lg mt-4 mb-8">

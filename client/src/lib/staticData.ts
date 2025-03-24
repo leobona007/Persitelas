@@ -218,6 +218,31 @@ export const products: Product[] = [
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
     slug: 'tela-mosquito'
+  },
+  {
+    id: 10,
+    name: 'Persianas Motorizadas',
+    description: 'A Tela para Mosquito para Portas impede a entrada de insetos enquanto mantém a circulação de ar nos ambientes. Feita sob medida, é prática, discreta e ideal para portas de varandas, sacadas e áreas externas.',
+    shortDescription: 'Tela para Mosquito para Portas – Protege sua casa contra insetos sem impedir a ventilação. ',
+    price: '',
+    priceRange: '',
+    images: [
+      '/public/tela_mosquiteira_porta.webp',
+      '/public/tela_mosquiteiro_porta_2.jpg',
+      
+    ],
+    category: 'persianas',
+    isFeatured: true,
+    isOnSale: false,
+    rating: 4.7,
+    reviewCount: 108,
+    options: {
+      colors: ['White', 'Cream', 'Beige', 'Gray', 'Tan'],
+      cellTypes: ['Single Cell', 'Double Cell', 'Triple Cell'],
+      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
+      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
+    },
+    slug: 'persianas-motorizadas'
   }
 ];
 
