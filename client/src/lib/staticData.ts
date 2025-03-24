@@ -59,7 +59,7 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/persiana_double_vision_sala.png',
+      '/persiana_double_vision_sala.webp',
       '/persiana_double_vision_sala_2.jpg',
       '/persiana_double_vision_3.webp'
     ],
