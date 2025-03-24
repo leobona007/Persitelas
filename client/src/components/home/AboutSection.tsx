@@ -1,6 +1,15 @@
 import { Link } from 'wouter';
 
 const AboutSection = () => {
+  // Function to handle WhatsApp button click
+  const handleWhatsAppQuote = () => {
+    const message = "Olá! Vi seu site e gostaria de solicitar um orçamento para os seus produtos!";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
@@ -70,11 +79,13 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <Link href="/about">
-              <a className="bg-[#225260] hover:bg-[#225260]/90 text-white font-medium px-8 py-3 inline-block mt-8 transition">
-                Faça seu orçamento!
-              </a>
-            </Link>
+            <button
+              onClick={handleWhatsAppQuote}
+              className="bg-[#225260] hover:bg-[#225260]/90 text-white font-medium px-8 py-3 inline-block mt-8 transition flex items-center"
+            >
+              <i className="fab fa-whatsapp mr-2 text-lg"></i>
+              Faça seu orçamento!
+            </button>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ const fetchInstagramPhotos = async (limit: number = 6): Promise<GalleryItem[]> =
     },
     {
       id: '6',
-      image: '/persiana_double_visionn.jpeg'
+      image: '/persiana_double_vision_sala_3.webp'
     },
   ];
   

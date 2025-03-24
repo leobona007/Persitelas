@@ -11,7 +11,7 @@ const NewsletterSection = () => {
     { value: 'telas-mosquiteiras', label: 'Telas Mosquiteiras' },
     { value: 'telas-protecao', label: 'Telas de Proteção' },
     { value: 'persianas', label: 'Persianas' },
-        { value: 'manutencao', label: 'Manutenção' },
+        { value: 'manutencao/conserto', label: 'Manutenção/Conserto' },
   ];
 
   // WhatsApp phone number (replace with your actual number)
@@ -23,7 +23,7 @@ const NewsletterSection = () => {
       'telas-mosquiteiras': 'Olá! Vim através do seu Site. E Gostaria de informações sobre Telas Mosquiteiras.',
       'telas-protecao': 'Olá! Vim através do seu Site. E Gostaria de informações sobre Telas de Proteção.',
       'persianas': 'Olá! Vim através do seu Site. E Gostaria de informações sobre Persianas.',
-      'manutencao': 'Olá! Vim através do seu Site. E Gostaria de informações sobre serviços de Manutenção.',
+      'manutencao/conserto': 'Olá! Vim através do seu Site. E Gostaria de informações sobre serviços de Manutenção/Conserto.',
       '': 'Olá! Vim através do seu Site. Gostaria de informações sobre seus serviços.'
     };
     

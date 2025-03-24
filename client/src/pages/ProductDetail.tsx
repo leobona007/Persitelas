@@ -52,7 +52,7 @@ const ProductDetail = () => {
   const handleWhatsAppQuote = () => {
     if (!product) return;
     
-    const message = `Olá! Vi em seu Site sobre ${product.name}! E gostaria de solicitar um orçamento para o produto! `;
+    const message = `Olá! Vi em seu site ${product.name}! E gostaria de solicitar um orçamento para o produto! `;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
     
