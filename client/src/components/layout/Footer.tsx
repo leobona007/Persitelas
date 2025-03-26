@@ -62,17 +62,17 @@ const Footer = () => {
             <h4 className="font-medium text-lg mb-6">Produtos</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/products?category=blinds" className="text-white/80 hover:text-white transition">
+                <Link href="/products?category=persianas" className="text-white/80 hover:text-white transition">
                   Persianas
                 </Link>
               </li>
                               <li>
-                <Link href="/products?category=curtains" className="text-white/80 hover:text-white transition">
+                <Link href="/products?category=telas-de-proteção" className="text-white/80 hover:text-white transition">
                   Tela Proteção
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=shades" className="text-white/80 hover:text-white transition">
+                <Link href="/products?category=mosquiteiras" className="text-white/80 hover:text-white transition">
                   Mosquiteiras
                 </Link>
               </li>

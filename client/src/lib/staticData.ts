@@ -124,6 +124,56 @@ export const products: Product[] = [
     slug: 'persianas-externas'
   },
   {
+    id: 10,
+    name: 'Persianas Horizontais',
+    description: 'Descubra a harmonia e a versatilidade das Persianas Horizontais da Persitelas. Com um design clássico e atemporal, estas persianas combinam funcionalidade e estética, permitindo um controle preciso da entrada de luz. Ideal para ambientes residenciais e comerciais, elas criam espaços aconchegantes e elegantes.',
+    shortDescription: 'Persianas Horizontais – Beleza clássica e controle de luz com design versátil para transformar seu ambiente.',
+    price: '',
+    priceRange: '',
+    images: [
+      '/persianas_horizontais_1.png',
+      '/persianas_horizontais_2.jpg',
+      '/persianas_horizontais_3.jpeg'
+    ],
+    category: 'persianas',
+    isFeatured: false,
+    isOnSale: false,
+    rating: 4.5,
+    reviewCount: 75,
+    options: {
+      colors: ['White', 'Light Blue', 'Beige', 'Gray'],
+      cellTypes: ['Standard', 'Premium'],
+      opacities: ['Light Filtering', 'Room Darkening'],
+      widths: ['60cm', '90cm', '120cm', 'Custom']
+    },
+    slug: 'persianas-horizontais'
+  },
+  {
+    id: 11,
+    name: 'Persianas Verticais',
+    description: 'Experimente a modernidade e o dinamismo das Persianas Verticais da Persitelas. Desenvolvidas para oferecer uma solução prática e contemporânea, estas persianas destacam-se pelo design inovador, permitindo ajustes precisos de luz e privacidade. Perfeitas para ambientes amplos, agregam sofisticação e funcionalidade ao seu espaço.',
+    shortDescription: 'Persianas Verticais – Design inovador e funcionalidade moderna para ambientes amplos e sofisticados.',
+    price: '',
+    priceRange: '',
+    images: [
+      '/persianas_verticais_1.png',
+      '/persianas_verticais_2.jpg',
+      '/persianas_verticais_3.jpeg'
+    ],
+    category: 'persianas',
+    isFeatured: false,
+    isOnSale: false,
+    rating: 4.3,
+    reviewCount: 50,
+    options: {
+      colors: ['White', 'Black', 'Gray'],
+      cellTypes: ['Standard', 'Premium'],
+      opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
+      widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
+    },
+    slug: 'persianas-horizontais'
+  },
+   {
     id: 6,
     name: 'Tela de Proteção para Janelas',
     description: 'A Tela de Proteção para Janelas é a solução ideal para evitar quedas e garantir a segurança de crianças, idosos e pets em apartamentos e sobrados. Feita sob medida, com materiais resistentes e discretos, protege sem comprometer a ventilação e a estética do ambiente.',
