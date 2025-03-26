@@ -1,13 +1,28 @@
 import { Link } from 'wouter';
 
+// Extend the Window interface to include the dataLayer property
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
+
 const AboutSection = () => {
   // Function to handle WhatsApp button click
   const handleWhatsAppQuote = () => {
-    const message = "Olá! Vi seu site e gostaria de solicitar um orçamento para os seus produtos!";
+    const message = "Olá! Vi seu site e gostaria de solicitar um orçamento.";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
-    
     window.open(whatsappUrl, '_blank');
+    // Disparar evento para o GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'gtm.linkClick',
+      category: 'engagement',
+      action: 'click',
+      label: "whats_click_anyco", // WhatsApp URL as label
+      clickURL: whatsappUrl, // Include Click URL in the tag
+    });
   };
 
   return (

@@ -55,8 +55,16 @@ const ProductDetail = () => {
     const message = `Olá! Vi em seu site ${product.name}! E gostaria de solicitar um orçamento para o produto! `;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
-    
     window.open(whatsappUrl, '_blank');
+    // Disparar evento para o GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'gtm.linkClick',
+      category: 'engagement',
+      action: 'click',
+      label: 'whats_click_anyco',
+      clickURL: whatsappUrl // URL do clique
+    });
   };
   
   const handleOptionChange = (optionType: string, value: string) => {
