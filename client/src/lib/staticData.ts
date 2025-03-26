@@ -171,7 +171,7 @@ export const products: Product[] = [
       opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'persianas-horizontais'
+    slug: 'persianas-verticais'
   },
    {
     id: 6,
