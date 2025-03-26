@@ -44,9 +44,16 @@ const NewsletterSection = () => {
     const message = getWhatsAppMessage(selectedService);
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-    
-    // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
+    // Disparar evento para o GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'gtm.linkClick',
+      category: 'engagement',
+      action: 'click',
+      label: "whats_click_anyco", // WhatsApp URL as label
+      clickURL: whatsappUrl, // Include Click URL in the tag
+    });
   };
 
   return (
