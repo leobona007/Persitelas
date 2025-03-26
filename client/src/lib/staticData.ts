@@ -131,9 +131,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/persianas_horizontais_1.png',
-      '/persianas_horizontais_2.jpg',
-      '/persianas_horizontais_3.jpeg'
+      '/persiana-horizontal-2.png',
+      '/persiana-horizontal-3.png',
+      
     ],
     category: 'persianas',
     isFeatured: false,
@@ -156,9 +156,9 @@ export const products: Product[] = [
     price: '',
     priceRange: '',
     images: [
-      '/persianas_verticais_1.png',
-      '/persianas_verticais_2.jpg',
-      '/persianas_verticais_3.jpeg'
+      '/Persiana-Vertical-1.png',
+      '/persiana-vertical-2.png',
+      '/persiana-vertical-3.png'
     ],
     category: 'persianas',
     isFeatured: false,
