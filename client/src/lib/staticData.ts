@@ -29,7 +29,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: 'Persianas Motorizadas',
-    description: 'Experimente o futuro da automação residencial com as Persianas Motorizadas da Persitelas. Desenvolvidas para oferecer praticidade, segurança e elegância, nossas persianas permitem o controle automático de luminosidade e privacidade com o simples toque de um botão. Com design moderno e tecnologia avançada, elas se adaptam perfeitamente a ambientes residenciais e corporativos, proporcionando conforto e economia de energia.',
+    description: 'Experimente o futuro da automação residencial com as Persianas Motorizadas da Persitelas. Desenvolvidas em diversos modelos para oferecer praticidade e elegância, nossas persianas permitem o controle automático de luminosidade e privacidade com o simples toque de um botão. Com design moderno e tecnologia avançada, elas se adaptam perfeitamente a ambientes residenciais e corporativos, proporcionando conforto e economia de energia.',
     shortDescription: 'Persianas Motorizadas – Controle automático de luz e privacidade com design moderno e eficiência para transformar seu ambiente. ',
     price: '',
     priceRange: '',
@@ -53,7 +53,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: 'Persianas Double-Vision',
+    name: 'Persianas de Rolo Double-Vision',
     description: 'A Persiana Double Vision combina modernidade e funcionalidade, permitindo o ajuste perfeito entre luminosidade e privacidade. Seu design inovador conta com faixas translúcidas e opacas que se alternam, possibilitando diferentes níveis de iluminação sem abrir mão da elegância.',
     shortDescription: 'Com faixas ajustáveis, a Persiana Double Vision permite regular a luz e a privacidade com elegância e praticidade.',
     price: '',
