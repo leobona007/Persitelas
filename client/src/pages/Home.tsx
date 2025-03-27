@@ -25,13 +25,14 @@ const Home = () => {
       <div>
         <HeroSlider />
         <CategorySection />
+        <NewsletterSection />
         <TestimonialsSection />
         <AboutSection />
         {/* <FeaturedProducts /> */}
-        
         {/* <BlogSection /> */}
         <GallerySection />
         <NewsletterSection />
+        
       </div>
     </>
   );
