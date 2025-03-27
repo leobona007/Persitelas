@@ -33,8 +33,8 @@ const slides: Slide[] = [
   {
     image: '/tela_de_protecao.jpg',
     product: 'Telas de Proteção',
-    title: 'Segurança e Conforto para Sua Família e Pets',
-    subtitle: 'Proteja crianças, idosos e animais de estimação com nossas redes de proteção que garantem tranquilidade para você!',
+    title: 'Redes de Proteção Personalizadas',
+    subtitle: 'Com um instalação Rápida e Segura você garante uma Proteção eficaz para quem voçê ama!',
     cta: {
       text: 'Faça seu orçamento',
       link: 'https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}'
@@ -70,7 +70,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     
     return () => clearInterval(timer);
   }, [currentSlide]); // Reset timer when slide changes
