@@ -1,9 +1,16 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'wouter';
+
+// Extend the Window interface to include the dataLayer property
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
 
 interface Slide {
   image: string;
+  product: string;
   title: string;
   subtitle: string;
   cta: {
@@ -15,26 +22,49 @@ interface Slide {
 const slides: Slide[] = [
   {
     image: '/escritorio_com_persianas.jpeg',
-    title: 'Design Inspirado Para Espaços do Dia a Dia',
-    subtitle: 'Eleve sua casa com nossas persianas premium, criadas para beleza duradoura e funcionalidade superior.',
+    product: 'Persianas Sob Medida',
+    title: 'Persianas Sob Medida Para seu ambiente!',
+    subtitle: 'Controle de luz, privacidade e design personalizado.',
     cta: {
-      text: 'Ver Persianas',
-      link: '/products?category=persianas'
+      text: 'Faça seu orçamento',
+      link: 'https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}'
     }
   },
   {
     image: '/tela_de_protecao.jpg',
-    title: 'Proteção Extra para quem Você Ama',
-    subtitle: 'Descubra nossa Redes de Proteção personalizadas, projetadas artesanalmente para proporcionar segurança para sua familia',
+    product: 'Telas de Proteção',
+    title: 'Segurança e Conforto para Sua Família e Pets',
+    subtitle: 'Proteja crianças, idosos e animais de estimação com nossas redes de proteção que garantem tranquilidade para você!',
     cta: {
-      text: 'Ver telas de proteção',
-      link: '/products?category=telas-de-proteção'
+      text: 'Faça seu orçamento',
+      link: 'https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}'
     }
   }
 ];
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  
+  // Function to handle WhatsApp button click
+  const handleWhatsAppQuote = (slideIndex: number) => {
+    const slide = slides[slideIndex];
+    // Include the product category from the link in the message
+    const productCategory = slide.cta.link.split('=')[1] || '';
+    const message = `Olá! Vi seu site e estou interessado em ${slide.product}. E Gostaria de solicitar um orçamento!`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+    // Disparar evento para o GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'gtm.linkClick',
+      category: 'engagement',
+      action: 'click',
+      label: `whats_click_${productCategory}`,
+      clickURL: whatsappUrl // URL do clique
+    });
+  };
   
   // Auto-rotate slides with reset capability
   useEffect(() => {
@@ -91,11 +121,13 @@ const HeroSlider = () => {
                     <p className="text-lg mt-4 mb-8">
                       {slides[currentSlide].subtitle}
                     </p>
-                    <Link href={slides[currentSlide].cta.link}>
-                      <a className="bg-[#5B412A] hover:bg-[#5B412A]/90 text-white font-medium px-8 py-3 inline-block transition">
-                        {slides[currentSlide].cta.text}
-                      </a>
-                    </Link>
+                    <button
+                      onClick={() => handleWhatsAppQuote(currentSlide)}
+                      className="bg-[#5B412A] hover:bg-[#5B412A]/90 text-white font-medium px-8 py-3 inline-block transition flex items-center"
+                    >
+                      <i className="fab fa-whatsapp mr-2"></i>
+                      {slides[currentSlide].cta.text}
+                    </button>
                   </motion.div>
                 </div>
               </div>
