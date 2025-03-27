@@ -329,41 +329,41 @@ export const categories: Category[] = [
 
 // Static data for testimonials
 export const testimonials: Testimonial[] = [
-  // {
-  //   id: 1,
-  //   name: 'Sarah Johnson',
-  //   role: 'Homeowner',
-  //   content: 'The blackout curtains I purchased are amazing! They completely transformed my bedroom, blocking out all light and reducing outside noise. The quality is exceptional and the installation service was professional and efficient.',
-  //   rating: 5
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Michael Rodriguez',
-  //   role: 'Interior Designer',
-  //   content: 'As an interior designer, I regularly recommend Persitelas to my clients. Their range of products is extensive, the quality is consistently high, and their customer service is unmatched in the industry.',
-  //   rating: 5
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Emma Thompson',
-  //   role: 'Customer',
-  //   content: 'I ordered custom wooden blinds for my living room and couldn\'t be happier with the result. The measuring service was precise, and the blinds fit perfectly. The natural wood adds such warmth to my space!',
-  //   rating: 4
-  // },
-  // {
-  //   id: 4,
-  //   name: 'David Chen',
-  //   role: 'Homeowner',
-  //   content: 'The cellular shades I purchased have made a noticeable difference in my energy bills. They provide excellent insulation while still looking stylish. The remote control operation is a convenient bonus!',
-  //   rating: 5
-  // },
-  // {
-  //   id: 5,
-  //   name: 'Olivia Martinez',
-  //   role: 'Customer',
-  //   content: 'I was hesitant to order window treatments online, but the detailed measuring guide and helpful customer service made it easy. My roman curtains arrived quickly and look absolutely beautiful!',
-  //   rating: 4
-  // }
+  {
+    id: 1,
+    name: 'Sarah Johnson',
+    role: 'Homeowner',
+    content: 'The blackout curtains I purchased are amazing! They completely transformed my bedroom, blocking out all light and reducing outside noise. The quality is exceptional and the installation service was professional and efficient.',
+    rating: 5
+  },
+  {
+    id: 2,
+    name: 'Michael Rodriguez',
+    role: 'Interior Designer',
+    content: 'As an interior designer, I regularly recommend Persitelas to my clients. Their range of products is extensive, the quality is consistently high, and their customer service is unmatched in the industry.',
+    rating: 5
+  },
+  {
+    id: 3,
+    name: 'Emma Thompson',
+    role: 'Customer',
+    content: 'I ordered custom wooden blinds for my living room and couldn\'t be happier with the result. The measuring service was precise, and the blinds fit perfectly. The natural wood adds such warmth to my space!',
+    rating: 4
+  },
+  {
+    id: 4,
+    name: 'David Chen',
+    role: 'Homeowner',
+    content: 'The cellular shades I purchased have made a noticeable difference in my energy bills. They provide excellent insulation while still looking stylish. The remote control operation is a convenient bonus!',
+    rating: 5
+  },
+  {
+    id: 5,
+    name: 'Olivia Martinez',
+    role: 'Customer',
+    content: 'I was hesitant to order window treatments online, but the detailed measuring guide and helpful customer service made it easy. My roman curtains arrived quickly and look absolutely beautiful!',
+    rating: 4
+  }
 ];
 
 // Static data for articles

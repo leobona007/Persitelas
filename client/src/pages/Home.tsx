@@ -24,10 +24,11 @@ const Home = () => {
       
       <div>
         <HeroSlider />
-        <AboutSection />
         <CategorySection />
-        {/* <FeaturedProducts /> */}
         <TestimonialsSection />
+        <AboutSection />
+        {/* <FeaturedProducts /> */}
+        
         {/* <BlogSection /> */}
         <GallerySection />
         <NewsletterSection />
