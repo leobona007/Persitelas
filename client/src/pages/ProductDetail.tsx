@@ -41,18 +41,18 @@ const ProductDetail = () => {
     loadProduct();
   }, [slug]);
   
-  const handleAddToCart = () => {
-    toast({
-      title: 'Added to cart',
-      description: `${product?.name} has been added to your cart`,
-      duration: 3000,
-    });
-  };
+  // const handleAddToCart = () => {
+  //   toast({
+  //     title: 'Added to cart',
+  //     description: `${product?.name} has been added to your cart`,
+  //     duration: 3000,
+  //   });
+  // };
   
   const handleWhatsAppQuote = () => {
     if (!product) return;
     
-    const message = `Olá! Vi em seu site ${product.name}! E gostaria de solicitar um orçamento para o produto! `;
+    const message = `Olá! Vi em seu site ${product.name}! E gostaria de solicitar um orçamento! `;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');

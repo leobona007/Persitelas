@@ -97,7 +97,7 @@ export const products: Product[] = [
       materials: ['Cotton', 'Linen', 'Polyester Blend', 'Silk Blend'],
       widths: ['80cm', '100cm', '120cm', '150cm', '180cm', 'Custom']
     },
-    slug: 'roman-curtains'
+    slug: 'curtinas-romanas'
   },
   {
     id: 5,
@@ -194,7 +194,7 @@ export const products: Product[] = [
       materials: ['Voile', 'Chiffon', 'Organza', 'Polyester'],
       widths: ['140cm', '180cm', '220cm', '280cm', 'Custom']
     },
-    slug: 'sheer-curtains'
+    slug: 'telas-de-proteção'
   },
   {
     id: 7,
@@ -218,7 +218,7 @@ export const products: Product[] = [
       materials: ['Polyester', 'Microfiber', 'Thermal Insulated'],
       widths: ['140cm', '180cm', '220cm', '280cm', 'Custom']
     },
-    slug: 'telas-de-proteção-piscinas'
+    slug: 'telas-de-protecao-piscinas'
   },
   {
     id: 8,
@@ -242,7 +242,7 @@ export const products: Product[] = [
       materials: ['Basswood', 'Bamboo', 'Cedar'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'telas-de-proteção-para-peitos'
+    slug: 'telas-de-protecao-para-peitos'
   },
   {
     id: 9,
@@ -266,7 +266,7 @@ export const products: Product[] = [
       opacities: ['Light Filtering', 'Room Darkening', 'Blackout'],
       widths: ['60cm', '90cm', '120cm', '150cm', 'Custom']
     },
-    slug: 'cellular-shades'
+    slug: 'mosquiteiras'
   // },
   // {
   //   id: 10,

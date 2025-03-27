@@ -18,8 +18,9 @@ const TestimonialsSection = () => {
     const loadTestimonials = async () => {
       try {
         setIsLoading(true);
-v        // console.log("CP1")
+        // console.log("CP1")
         const testimonialsData = await fetchTestimonials();
+        console.log(testimonialsData)
         setTestimonials(testimonialsData);
         setIsLoading(false);
       } catch (err) {

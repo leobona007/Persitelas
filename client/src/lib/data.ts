@@ -179,3 +179,4 @@ export async function submitContactForm(formData: any): Promise<{ success: boole
     }, 1000);
   });
 }
+
