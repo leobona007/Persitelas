@@ -31,6 +31,16 @@ const slides: Slide[] = [
     }
   },
   {
+    image: '/persiana_externa_hero.webp',
+    product: 'Instalação ou Conserto de Persianas externas',
+    title: 'Instalação e Conserto de Persianas externas',
+    subtitle: 'Pensando em ter conforto térmico e luminoso ou telo novamente? Somos especializados em instalaçãoe e mnutenção de Persianas externas.',
+    cta: {
+      text: 'Faça seu orçamento',
+      link: 'https://api.whatsapp.com/send?phone=5551992233031&text=${encodedMessage}'
+    }
+  }, 
+  {
     image: '/tela_de_protecao.jpg',
     product: 'Telas de Proteção',
     title: 'Redes de Proteção Personalizadas',
