@@ -17,7 +17,7 @@ const AboutSection = () => {
     // Disparar evento para o GTM
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: 'gtm.linkClick',
+      event: 'chamou_whats_sobre',
       category: 'engagement',
       action: 'click',
       label: "whats_click_anyco", // WhatsApp URL as label

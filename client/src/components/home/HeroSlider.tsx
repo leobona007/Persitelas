@@ -58,7 +58,8 @@ const HeroSlider = () => {
     // Disparar evento para o GTM
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: 'gtm.linkClick',
+      event: 'chamou_whats_banner',
+      //event: 'gtm.linkClick',
       category: 'engagement',
       action: 'click',
       label: `whats_click_${productCategory}`,
