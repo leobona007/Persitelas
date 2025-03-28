@@ -112,7 +112,22 @@ const Footer = () => {
           <p className="text-white/70 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Persitelas. Todos os direitos reservados.
           </p>
-                 </div>
+          <div className="flex items-center">
+            <span className="text-white/70 text-sm mr-2">Site desenvolvido por:</span>
+            <a 
+              href="https://anyco.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-80 transition-opacity"
+            >
+              <img 
+                src="/any co transparente branco horizontal v4.png" 
+                alt="Any Co" 
+                className="h-6" 
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
