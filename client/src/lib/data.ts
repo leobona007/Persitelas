@@ -139,12 +139,12 @@ export function formatPrice(price: string): string {
  * These are placeholders for now
  */
 export function addToCart(productId: number, quantity: number, options?: Record<string, string>): void {
-  console.log('Added to cart:', { productId, quantity, options });
+ // console.log('Added to cart:', { productId, quantity, options });
   // In a real app, this would call an API endpoint or update local storage
 }
 
 export function toggleFavorite(productId: number): void {
-  console.log('Toggled favorite status for product:', productId);
+  //console.log('Toggled favorite status for product:', productId);
   // In a real app, this would call an API endpoint or update local storage
 }
 

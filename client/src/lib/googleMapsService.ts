@@ -13,7 +13,7 @@ const PLACE_ID = 'ChIJO78BdSR2GZUR5a31VWcaijc'; // Replace with actual Place ID 
  * @param limit Optional parameter to limit the number of reviews (defaults to 6)
  */
 export async function fetchGoogleReviews(limit: number = 6): Promise<Testimonial[]> {
-    console.log('fetchGoogleReviews');
+   // console.log('fetchGoogleReviews');
   try {
     const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&key=${API_KEY}`;
     

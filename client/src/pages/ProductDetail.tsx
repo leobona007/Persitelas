@@ -59,7 +59,7 @@ const ProductDetail = () => {
     // Disparar evento para o GTM
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: 'chamou_whats_product',
+      event: 'chamou_whats_produto',
       category: 'engagement',
       action: 'click',
       label: 'whats_click_anyco',

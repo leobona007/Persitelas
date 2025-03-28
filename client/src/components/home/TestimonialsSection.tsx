@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
         setIsLoading(true);
         // console.log("CP1")
         const testimonialsData = await fetchTestimonials();
-        console.log(testimonialsData)
+        //console.log(testimonialsData)
         setTestimonials(testimonialsData);
         setIsLoading(false);
       } catch (err) {
